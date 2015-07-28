@@ -1,0 +1,63 @@
+[2015-07-28 10:02:39] lumen.ERROR: 
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/app/Http/Middleware/AccessorMiddleware.php:84
+[VAL] - "No path in accessor definition."
+[CODE]>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+75:          return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+76:        }
+77:      } else {
+78:        $msg = "No table in path definition.";
+79:        NuLog::error($msg, __FILE__, __LINE__);
+80:        return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+81:      }
+82:    } else {
+83:      $msg = "No path in accessor definition.";
+84:      NuLog::error($msg, __FILE__, __LINE__);
+85:      return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+86:    }
+87:  }
+88:}
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<[EOF]
+
+  
+[2015-07-28 10:03:12] lumen.ERROR: 
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/app/Http/Middleware/AccessorMiddleware.php:84
+[VAL] - "No path in accessor definition."
+[CODE]>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+75:          return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+76:        }
+77:      } else {
+78:        $msg = "No table in path definition.";
+79:        NuLog::error($msg, __FILE__, __LINE__);
+80:        return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+81:      }
+82:    } else {
+83:      $msg = "No path in accessor definition.";
+84:      NuLog::error($msg, __FILE__, __LINE__);
+85:      return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+86:    }
+87:  }
+88:}
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<[EOF]
+
+  
+[2015-07-28 10:04:55] lumen.ERROR: 
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/app/Http/Middleware/AccessorMiddleware.php:84
+[VAL] - "No path in accessor definition."
+[CODE]>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+75:          return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+76:        }
+77:      } else {
+78:        $msg = "No table in path definition.";
+79:        NuLog::error($msg, __FILE__, __LINE__);
+80:        return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+81:      }
+82:    } else {
+83:      $msg = "No path in accessor definition.";
+84:      NuLog::error($msg, __FILE__, __LINE__);
+85:      return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+86:    }
+87:  }
+88:}
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<[EOF]
+
+  

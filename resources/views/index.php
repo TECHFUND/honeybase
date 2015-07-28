@@ -1,12 +1,6 @@
-<?php include __PUBLIC__ . 'assets/header.php' ?>
+<?php include __PUBLIC__ . '/template/header.php' ?>
 
-<script>
-  $(function(){
-    honeybase.current_user(function(isLoggedIn, current_user){
-      if(isLoggedIn) location.href = "/my/feed";
-      else location.href = "/lp";
-    });
-  });
-</script>
-
-<?php include __PUBLIC__ . 'assets/footer.php'; ?>
+<script src="index_view.js"></script>
+<script src="index_controller.js"></script>
+<script src="index"></script>
+<?php include __PUBLIC__ . '/template/footer.php'; ?>

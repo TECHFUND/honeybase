@@ -2,7 +2,7 @@
 
   var json = (function(){
     $.ajaxSetup({ async: false });
-    var data = $.getJSON("http://"+location.host+"/assets/config.json.php", function(){});
+    var data = $.getJSON("http://"+location.host+"/config/honeybase_config.json.php", function(){});
     $.ajaxSetup({ async: true });
     return data.responseJSON;
   }());
@@ -33,15 +33,7 @@
 	function HoneyBase(host) {
 		this.host = format_host(host);
     this.api = this.host + "api/" + VERSION;
-    //this.dealer = new JSMQ.Dealer();
-    /*
-    this.dealer.connect("ws://localhost");
-    this.dealer.onMessage = function (message) {
-      console.log(message.popString());
-    };
-    */
 	}
-	window.HoneyBase = HoneyBase;
 
 	var eventnames = {
 			callback : "a",
@@ -271,11 +263,6 @@
       // Please use this inside of `$form.change` listener :)
       var self = this, fd = new FormData(document.forms.namedItem(form_name));
       fd.append("key", file_input_name);
-
-
-      var path = location.pathname;
-      if(path.slice(-1) == "/" && path != "/") path = path.slice(0, -1);
-      fd.append("refferer", path);
       formAjax();
 
       function formAjax(){
@@ -484,7 +471,7 @@
 
 	function $_ajax(method, url, params, cb) {
     var path = location.pathname;
-    if(path.slice(-1) == "/" && path != "/") path = path.slice(0, -1);
+    if(path.slice(-1) == "/") path = path.slice(0, -1);
     params.refferer = path;
 		var xhr = null;
 		if(window.XMLHttpRequest) {
@@ -513,4 +500,7 @@
   		return params_array.join("&");
   	}
   }
+
+  global.HoneyBase = HoneyBase;
+  return global;
 }(window));

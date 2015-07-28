@@ -1,7 +1,7 @@
 <?php
-  $env = getenv('GROWTHER_ENV');
+  $env = getenv('HONEYBASE_ENV');
   if($env === false){
-    $env = "s";
+    $env = "d";
   }
  ?>
 

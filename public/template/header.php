@@ -16,5 +16,7 @@
   <meta property="fb:app_id" content="app_id">
   <link rel="shortcut icon" href="/assets/img/common/favicon.ico">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
 </head>
 <body>

@@ -1,7 +1,7 @@
 {
   "development" : {
     "service" : {
-      "name" : "growther-development"
+      "name" : "xxxxx-development"
     },
     "origin" : "http://localhost:8000",
     "oauth" : {
@@ -15,14 +15,14 @@
       "port" : 3306,
       "username" : "root",
       "password" : "root",
-      "name" : "growther_development",
-      "log_path" : "/../storage/logs/mysql.log"
+      "name" : "xxxxx_development",
+      "log_path" : "/../logs/mysql.log"
     }
   },
 
   "staging" : {
     "service" : {
-      "name" : "growther-staging"
+      "name" : "xxxxx-staging"
     },
     "origin" : "http://skillshared.techfund.jp",
     "oauth" : {
@@ -36,14 +36,14 @@
       "port" : 3306,
       "username" : "root",
       "password" : "m4nqNFV3",
-      "name" : "growther_staging",
-      "log_path" : "/../storage/logs/mysql.log"
+      "name" : "xxxxx_staging",
+      "log_path" : "/../logs/mysql.log"
     }
   },
 
   "production" : {
     "service" : {
-      "name" : "growther"
+      "name" : "xxxxx"
     },
     "origin" : "http://skillshared.techfund.jp",
     "oauth" : {
@@ -57,8 +57,8 @@
       "port" : 3306,
       "username" : "root",
       "password" : "m4nqNFV3",
-      "name" : "growther",
-      "log_path" : "/../storage/logs/mysql.log"
+      "name" : "xxxxx",
+      "log_path" : "/../logs/mysql.log"
     }
   }
 }
