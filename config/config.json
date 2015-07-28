@@ -1,0 +1,64 @@
+{
+  "development" : {
+    "service" : {
+      "name" : "growther-development"
+    },
+    "origin" : "http://localhost:8000",
+    "oauth" : {
+      "facebook" : {
+        "consumer_key" : "437440596425704",
+        "consumer_secret" : "3e23d94bc164fe44e80a34077117995d"
+      }
+    },
+    "database" : {
+      "host" : "localhost",
+      "port" : 3306,
+      "username" : "root",
+      "password" : "root",
+      "name" : "growther_development",
+      "log_path" : "/../storage/logs/mysql.log"
+    }
+  },
+
+  "staging" : {
+    "service" : {
+      "name" : "growther-staging"
+    },
+    "origin" : "http://skillshared.techfund.jp",
+    "oauth" : {
+      "facebook" : {
+        "consumer_key" : "438227309680366",
+        "consumer_secret" : "faa67b1d96863403640398b52af1ad85"
+      }
+    },
+    "database" : {
+      "host" : "localhost",
+      "port" : 3306,
+      "username" : "root",
+      "password" : "m4nqNFV3",
+      "name" : "growther_staging",
+      "log_path" : "/../storage/logs/mysql.log"
+    }
+  },
+
+  "production" : {
+    "service" : {
+      "name" : "growther"
+    },
+    "origin" : "http://skillshared.techfund.jp",
+    "oauth" : {
+      "facebook" : {
+        "consumer_key" : "437440486425715",
+        "consumer_secret" : "612c94b1ab6b1bc1f15b3c5062487b39"
+      }
+    },
+    "database" : {
+      "host" : "localhost",
+      "port" : 3306,
+      "username" : "root",
+      "password" : "m4nqNFV3",
+      "name" : "growther",
+      "log_path" : "/../storage/logs/mysql.log"
+    }
+  }
+}

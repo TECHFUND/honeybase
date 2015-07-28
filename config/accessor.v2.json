@@ -1,0 +1,265 @@
+{
+  "/" : {
+    "honeybase" : ["signup[type=(client|expert)]", "signin", "auth[provider=facebook,type=(client|expert)]", "current_user", "logout"]
+  },
+  "/expert_login" : {
+    "honeybase" : ["auth[provider=facebook,type=expert,banned=false]", "current_user", "logout"]
+  },
+  "/client_login" : {
+    "honeybase" : ["auth[provider=facebook,type=client,banned=false]", "current_user", "logout"],
+    "database" : {
+      "issues" : {
+        "insert" : {
+          "role" : "client",
+          "params" : ["title", "body", "user_id={current_user}", "created_at", "updated_at"]
+        }
+      }
+    }
+  },
+  "/issues/*" : {
+    "honeybase" : ["auth[provider=facebook,type=expert,banned=false]", "current_user", "logout"],
+    "database" : {
+      "messages" : {
+        "insert" : {
+          "role" : "expert",
+          "params" : ["body", "sender_id={current_user}", "receiver_id", "issue_id", "created_at", "updated_at", "type=separated"]
+        }
+      },
+      "issues" : {
+        "select" : {
+          "role" : "expert",
+          "params" : ["id"]
+        }
+      }
+    }
+  },
+
+
+
+
+  "/client" : {
+    "honeybase" : ["current_user", "logout"],
+    "database" : {
+      "issues" : {
+        "insert" : {
+          "role" : "client",
+          "params" : ["title", "body", "user_id={current_user}", "created_at", "updated_at"]
+        }
+      }
+    }
+  },
+  "/client/issues/*/chat" : {
+    "honeybase" : ["current_user", "logout"],
+    "database" : {
+      "messages" : {
+        "insert" : {
+          "role" : "client",
+          "params" : ["body", "sender_id={current_user}", "receiver_id", "issue_id", "created_at", "updated_at", "type=separated"]
+        },
+        "select" : {
+          "role" : "client",
+          "params" : ["sender_id", "receiver_id"]
+        }
+      },
+      "issues" : {
+        "select" : {
+          "role" : "client",
+          "params" : ["id"]
+        }
+      },
+      "issue_experts" : {
+        "select" : {
+          "role" : "client",
+          "params" : ["issue_id"]
+        }
+      },
+      "issue_executors" : {
+        "insert" : {
+          "role" : "client",
+          "params" : ["issue_id", "executor_id", "created_at", "updated_at"]
+        }
+      },
+      "users" : {
+        "select" : {
+          "role" : "client",
+          "params" : ["id"]
+        },
+        "search" : {
+          "role" : "client",
+          "params" : ["full_name"]
+        }
+      }
+    }
+  },
+  "/client/issues/*/group_chat" : {
+    "honeybase" : ["current_user", "logout"],
+    "database" : {
+      "messages" : {
+        "insert" : {
+          "role" : "client",
+          "params" : ["body", "sender_id={current_user}", "issue_id", "created_at", "updated_at", "type=group"]
+        },
+        "select" : {
+          "role" : "client",
+          "params" : ["sender_id", "receiver_id"]
+        }
+      },
+      "users" : {
+        "select" : {
+          "role" : "client",
+          "params" : ["id"]
+        },
+        "search" : {
+          "role" : "client",
+          "params" : ["full_name"]
+        }
+      }
+    }
+  },
+  "/client/edit" : {
+    "honeybase" : ["current_user", "logout"],
+    "database" : {
+      "users" : {
+        "update" : {
+          "role" : "owner",
+          "params" : ["updated_at", "description", "email", "picture"]
+        }
+      }
+    }
+  },
+
+
+
+  "/expert" : {
+    "honeybase" : ["current_user", "logout"]
+  },
+  "/expert/issues/*/chat" : {
+    "honeybase" : ["current_user", "logout"],
+    "database" : {
+      "messages" : {
+        "insert" : {
+          "role" : "expert",
+          "params" : ["body", "sender_id={current_user}", "receiver_id", "issue_id", "created_at", "updated_at", "type=separated"]
+        },
+        "select" : {
+          "role" : "expert",
+          "params" : ["sender_id", "receiver_id"]
+        }
+      },
+      "issues" : {
+        "select" : {
+          "role" : "expert",
+          "params" : ["id"]
+        }
+      },
+      "users" : {
+        "select" : {
+          "role" : "expert",
+          "params" : ["id"]
+        },
+        "search" : {
+          "role" : "expert",
+          "params" : ["full_name"]
+        }
+      }
+    }
+  },
+  "/expert/issues/*/group_chat" : {
+    "honeybase" : ["current_user", "logout"],
+    "database" : {
+      "messages" : {
+        "insert" : {
+          "role" : "expert",
+          "params" : ["body", "sender_id={current_user}", "issue_id", "created_at", "updated_at", "type=group"]
+        },
+        "select" : {
+          "role" : "expert",
+          "params" : ["sender_id", "receiver_id"]
+        }
+      },
+      "users" : {
+        "select" : {
+          "role" : "expert",
+          "params" : ["id"]
+        },
+        "search" : {
+          "role" : "expert",
+          "params" : ["full_name"]
+        }
+      }
+    }
+  },
+  "/expert/edit" : {
+    "honeybase" : ["current_user", "logout"],
+    "database" : {
+      "users" : {
+        "update" : {
+          "role" : "owner",
+          "params" : ["updated_at", "description", "email", "picture"]
+        }
+      },
+      "skills" : {
+        "insert" : {
+          "role" : "expert",
+          "params" : ["name", "created_at", "updated_at"]
+        },
+        "select" : {
+          "role" : "expert",
+          "params" : ["name"]
+        }
+      },
+      "expert_skills" : {
+        "insert" : {
+          "role" : "expert",
+          "params" : ["expert_id={current_user}", "skill_id", "grade", "created_at", "updated_at"]
+        },
+        "select" : {
+          "role" : "expert",
+          "params" : ["skill_id", "expert_id"]
+        },
+        "delete" : {
+          "role" : "expert",
+          "params" : ["id"]
+        }
+      }
+    }
+  },
+
+
+
+
+  "/admin" : {
+    "honeybase" : ["auth[provider=facebook,type=admin,banned=false]", "current_user", "logout"]
+  },
+  "/admin/users" : {
+    "honeybase" : ["current_user", "logout"],
+    "database" : {
+      "users" : {
+        "select" : {
+          "role" : "admin",
+          "params" : ["id"]
+        },
+        "update" : {
+          "role" : "admin",
+          "params" : ["updated_at", "banned"]
+        }
+      }
+    }
+  },
+  "/admin/chats" : {
+    "honeybase" : ["current_user", "logout"],
+    "database" : {
+      "messages" : {
+        "update" : {
+          "role" : "admin",
+          "params" : ["created_at", "updated_at", "deleted"]
+        },
+        "select" : {
+          "role" : "admin",
+          "params" : ["id"]
+        }
+      }
+    }
+  }
+
+}
