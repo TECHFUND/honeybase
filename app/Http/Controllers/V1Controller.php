@@ -24,10 +24,7 @@ class V1Controller extends Controller {
 
   /* all */
   public function index(Request $request) {
-    $session_id = $request->cookie(SERVICE_NAME.'id');
-    $current_user = User::current_user($session_id);
-
-    return view('v1.index', ["current_user"=>$current_user]);
+    return view('v1.index');
   }
 
   public function about(Request $request) {
