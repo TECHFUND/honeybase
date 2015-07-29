@@ -1,5 +1,20 @@
 <?php
 
+$app->routeMiddleware([
+  'accessor' => 'Lib\HoneyBase\Middleware\AccessorMiddleware',
+  'login' => 'Lib\HoneyBase\Middleware\LoginMiddleware',
+  'admin' => 'Lib\HoneyBase\Middleware\AdminMiddleware',
+  'client' => 'Lib\HoneyBase\Middleware\ClientMiddleware',
+  'expert' => 'Lib\HoneyBase\Middleware\ExpertMiddleware',
+  'verify' => 'Lib\HoneyBase\Middleware\BeforeVerifyMiddleware',
+	'basic' => 'Lib\HoneyBase\Middleware\BasicAuthenticationMiddleware',
+	'stakeholder' => 'Lib\HoneyBase\Middleware\StakeholderMiddleware',
+	'profile_filling' => 'Lib\HoneyBase\Middleware\ProfileFillingMiddleware',
+	'issue_owner' => 'Lib\HoneyBase\Middleware\IssueOwnerMiddleware',
+	'issue_expert' => 'Lib\HoneyBase\Middleware\IssueExpertMiddleware',
+	'issue_executor' => 'Lib\HoneyBase\Middleware\IssueExecutorMiddleware'
+]);
+
 $app->group(['middleware' => 'accessor'], function() use ($app) {
   $app->get('api/v1/current_user', ['uses'=>'App\Http\Controllers\AccountController@current_user']);
   $app->post('api/v1/auth', ['uses'=>'App\Http\Controllers\AccountController@auth']);

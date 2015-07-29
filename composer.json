@@ -11,7 +11,8 @@
         "barryvdh/laravel-debugbar": "dev-master",
         "facebook/php-sdk-v4" : "^4.0",
         "predis/predis" : "~1.0",
-        "illuminate/redis" : "~5.0"
+        "illuminate/redis" : "~5.0",
+        "jenssegers/agent" : "*"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.0"

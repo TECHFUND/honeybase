@@ -1,9 +1,9 @@
 <?php
 
-require_once __DIR__.'/../vendor/autoload.php';
-require_once __DIR__.'/../config/constants.php';
+require_once __DIR__.'/vendor/autoload.php';
+require_once __DIR__.'/config/constants.php';
 
-//Dotenv::load(__DIR__.'/../');
+//Dotenv::load(__DIR__.'/');
 
 
 
@@ -20,7 +20,7 @@ require_once __DIR__.'/../config/constants.php';
 */
 
 $app = new Laravel\Lumen\Application(
-	realpath(__DIR__.'/../')
+	realpath(__DIR__.'/')
 );
 
 $app->withFacades();
@@ -66,20 +66,6 @@ $app->singleton(
      // 'Laravel\Lumen\Http\Middleware\VerifyCsrfToken'
  // ]);
 
-$app->routeMiddleware([
-  'accessor' => 'Lib\HoneyBase\Middleware\AccessorMiddleware',
-  'login' => 'Lib\HoneyBase\Middleware\LoginMiddleware',
-  'admin' => 'Lib\HoneyBase\Middleware\AdminMiddleware',
-  'client' => 'Lib\HoneyBase\Middleware\ClientMiddleware',
-  'expert' => 'Lib\HoneyBase\Middleware\ExpertMiddleware',
-  'verify' => 'Lib\HoneyBase\Middleware\BeforeVerifyMiddleware',
-	'basic' => 'Lib\HoneyBase\Middleware\BasicAuthenticationMiddleware',
-	'stakeholder' => 'Lib\HoneyBase\Middleware\StakeholderMiddleware',
-	'profile_filling' => 'Lib\HoneyBase\Middleware\ProfileFillingMiddleware',
-	'issue_owner' => 'Lib\HoneyBase\Middleware\IssueOwnerMiddleware',
-	'issue_expert' => 'Lib\HoneyBase\Middleware\IssueExpertMiddleware',
-	'issue_executor' => 'Lib\HoneyBase\Middleware\IssueExecutorMiddleware'
-]);
 
 /*
 |--------------------------------------------------------------------------
@@ -106,8 +92,8 @@ $app->routeMiddleware([
 |
 */
 
-require __DIR__.'/../app/routes.php';
-require __DIR__.'/../lib/honeybase/routes.php';
+require __DIR__.'/app/routes.php';
+require __DIR__.'/lib/honeybase/routes.php';
 
 $db = new Lib\HoneyBase\Model\MysqlAdaptor();
 
