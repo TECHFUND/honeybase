@@ -1,7 +1,7 @@
 <?php
 
 require_once __DIR__.'/../vendor/autoload.php';
-require_once __DIR__.'/../config/define.php';
+require_once __DIR__.'/../config/constants.php';
 
 //Dotenv::load(__DIR__.'/../');
 
@@ -39,12 +39,12 @@ $app->withEloquent();
 
 $app->singleton(
     'Illuminate\Contracts\Debug\ExceptionHandler',
-    'App\Exceptions\Handler'
+    'Util\Exceptions\Handler'
 );
 
 $app->singleton(
     'Illuminate\Contracts\Console\Kernel',
-    'App\Console\Kernel'
+    'Util\Console\Kernel'
 );
 
 /*
@@ -67,18 +67,18 @@ $app->singleton(
  // ]);
 
 $app->routeMiddleware([
-  'accessor' => 'App\Http\Middleware\AccessorMiddleware',
-  'login' => 'App\Http\Middleware\LoginMiddleware',
-  'admin' => 'App\Http\Middleware\AdminMiddleware',
-  'client' => 'App\Http\Middleware\ClientMiddleware',
-  'expert' => 'App\Http\Middleware\ExpertMiddleware',
-  'verify' => 'App\Http\Middleware\BeforeVerifyMiddleware',
-	'basic' => 'App\Http\Middleware\BasicAuthenticationMiddleware',
-	'stakeholder' => 'App\Http\Middleware\StakeholderMiddleware',
-	'profile_filling' => 'App\Http\Middleware\ProfileFillingMiddleware',
-	'issue_owner' => 'App\Http\Middleware\IssueOwnerMiddleware',
-	'issue_expert' => 'App\Http\Middleware\IssueExpertMiddleware',
-	'issue_executor' => 'App\Http\Middleware\IssueExecutorMiddleware'
+  'accessor' => 'Lib\HoneyBase\Middleware\AccessorMiddleware',
+  'login' => 'Lib\HoneyBase\Middleware\LoginMiddleware',
+  'admin' => 'Lib\HoneyBase\Middleware\AdminMiddleware',
+  'client' => 'Lib\HoneyBase\Middleware\ClientMiddleware',
+  'expert' => 'Lib\HoneyBase\Middleware\ExpertMiddleware',
+  'verify' => 'Lib\HoneyBase\Middleware\BeforeVerifyMiddleware',
+	'basic' => 'Lib\HoneyBase\Middleware\BasicAuthenticationMiddleware',
+	'stakeholder' => 'Lib\HoneyBase\Middleware\StakeholderMiddleware',
+	'profile_filling' => 'Lib\HoneyBase\Middleware\ProfileFillingMiddleware',
+	'issue_owner' => 'Lib\HoneyBase\Middleware\IssueOwnerMiddleware',
+	'issue_expert' => 'Lib\HoneyBase\Middleware\IssueExpertMiddleware',
+	'issue_executor' => 'Lib\HoneyBase\Middleware\IssueExecutorMiddleware'
 ]);
 
 /*
@@ -106,8 +106,9 @@ $app->routeMiddleware([
 |
 */
 
-require __DIR__.'/../app/Http/routes.php';
+require __DIR__.'/../app/routes.php';
+require __DIR__.'/../lib/honeybase/routes.php';
 
-$db = new App\Models\MysqlAdaptor();
+$db = new Lib\HoneyBase\Model\MysqlAdaptor();
 
 return $app;

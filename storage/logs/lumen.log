@@ -61,3 +61,143 @@
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<[EOF]
 
   
+[2015-07-29 01:14:17] lumen.ERROR: exception 'ReflectionException' with message 'Class App\Http\Controllers\V1Controller does not exist' in /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php:779
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(779): ReflectionClass->__construct('App\\Http\\Contro...')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(659): Illuminate\Container\Container->build('App\\Http\\Contro...', Array)
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(366): Illuminate\Container\Container->make('App\\Http\\Contro...', Array)
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1213): Laravel\Lumen\Application->make('App\\Http\\Contro...')
+#4 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1186): Laravel\Lumen\Application->callControllerAction(Array)
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1171): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1093): Laravel\Lumen\Application->handleFoundRoute(Array)
+#7 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1320): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#8 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1099): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#9 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#10 /Users/sgtn/_dev/2015/honeybase/public/index.php(29): Laravel\Lumen\Application->run()
+#11 /Users/sgtn/_dev/2015/honeybase/server.php(12): require_once('/Users/sgtn/_de...')
+#12 {main}  
+[2015-07-29 03:31:43] lumen.ERROR: exception 'ReflectionException' with message 'Class App\Http\Controllers\HomeController does not exist' in /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php:779
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(779): ReflectionClass->__construct('App\\Http\\Contro...')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(659): Illuminate\Container\Container->build('App\\Http\\Contro...', Array)
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(366): Illuminate\Container\Container->make('App\\Http\\Contro...', Array)
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1213): Laravel\Lumen\Application->make('App\\Http\\Contro...')
+#4 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1186): Laravel\Lumen\Application->callControllerAction(Array)
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1171): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1093): Laravel\Lumen\Application->handleFoundRoute(Array)
+#7 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1320): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#8 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1099): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#9 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#10 /Users/sgtn/_dev/2015/honeybase/public/index.php(29): Laravel\Lumen\Application->run()
+#11 /Users/sgtn/_dev/2015/honeybase/server.php(12): require_once('/Users/sgtn/_de...')
+#12 {main}  
+[2015-07-29 03:32:06] lumen.ERROR: exception 'ReflectionException' with message 'Class App\Http\Controllers\HomeController does not exist' in /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php:779
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(779): ReflectionClass->__construct('App\\Http\\Contro...')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(659): Illuminate\Container\Container->build('App\\Http\\Contro...', Array)
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(366): Illuminate\Container\Container->make('App\\Http\\Contro...', Array)
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1213): Laravel\Lumen\Application->make('App\\Http\\Contro...')
+#4 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1186): Laravel\Lumen\Application->callControllerAction(Array)
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1171): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1093): Laravel\Lumen\Application->handleFoundRoute(Array)
+#7 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1320): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#8 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1099): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#9 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#10 /Users/sgtn/_dev/2015/honeybase/public/index.php(29): Laravel\Lumen\Application->run()
+#11 /Users/sgtn/_dev/2015/honeybase/server.php(12): require_once('/Users/sgtn/_de...')
+#12 {main}  
+[2015-07-29 03:32:07] lumen.ERROR: exception 'ReflectionException' with message 'Class App\Http\Controllers\HomeController does not exist' in /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php:779
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(779): ReflectionClass->__construct('App\\Http\\Contro...')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(659): Illuminate\Container\Container->build('App\\Http\\Contro...', Array)
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(366): Illuminate\Container\Container->make('App\\Http\\Contro...', Array)
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1213): Laravel\Lumen\Application->make('App\\Http\\Contro...')
+#4 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1186): Laravel\Lumen\Application->callControllerAction(Array)
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1171): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1093): Laravel\Lumen\Application->handleFoundRoute(Array)
+#7 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1320): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#8 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1099): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#9 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#10 /Users/sgtn/_dev/2015/honeybase/public/index.php(29): Laravel\Lumen\Application->run()
+#11 /Users/sgtn/_dev/2015/honeybase/server.php(12): require_once('/Users/sgtn/_de...')
+#12 {main}  
+[2015-07-29 03:32:11] lumen.ERROR: exception 'ReflectionException' with message 'Class App\Http\Controllers\HomeController does not exist' in /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php:779
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(779): ReflectionClass->__construct('App\\Http\\Contro...')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(659): Illuminate\Container\Container->build('App\\Http\\Contro...', Array)
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(366): Illuminate\Container\Container->make('App\\Http\\Contro...', Array)
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1213): Laravel\Lumen\Application->make('App\\Http\\Contro...')
+#4 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1186): Laravel\Lumen\Application->callControllerAction(Array)
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1171): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1093): Laravel\Lumen\Application->handleFoundRoute(Array)
+#7 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1320): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#8 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1099): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#9 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#10 /Users/sgtn/_dev/2015/honeybase/public/index.php(29): Laravel\Lumen\Application->run()
+#11 /Users/sgtn/_dev/2015/honeybase/server.php(12): require_once('/Users/sgtn/_de...')
+#12 {main}  
+[2015-07-29 03:32:27] lumen.ERROR: exception 'ReflectionException' with message 'Class App\Controllers\HomeController does not exist' in /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php:779
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(779): ReflectionClass->__construct('App\\Controllers...')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(659): Illuminate\Container\Container->build('App\\Controllers...', Array)
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(366): Illuminate\Container\Container->make('App\\Controllers...', Array)
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1213): Laravel\Lumen\Application->make('App\\Controllers...')
+#4 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1186): Laravel\Lumen\Application->callControllerAction(Array)
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1171): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1093): Laravel\Lumen\Application->handleFoundRoute(Array)
+#7 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1320): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#8 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1099): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#9 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#10 /Users/sgtn/_dev/2015/honeybase/public/index.php(29): Laravel\Lumen\Application->run()
+#11 /Users/sgtn/_dev/2015/honeybase/server.php(12): require_once('/Users/sgtn/_de...')
+#12 {main}  
+[2015-07-29 03:32:32] lumen.ERROR: exception 'ReflectionException' with message 'Class App\Controllers\HomeController does not exist' in /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php:779
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(779): ReflectionClass->__construct('App\\Controllers...')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(659): Illuminate\Container\Container->build('App\\Controllers...', Array)
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(366): Illuminate\Container\Container->make('App\\Controllers...', Array)
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1213): Laravel\Lumen\Application->make('App\\Controllers...')
+#4 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1186): Laravel\Lumen\Application->callControllerAction(Array)
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1171): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1093): Laravel\Lumen\Application->handleFoundRoute(Array)
+#7 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1320): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#8 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1099): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#9 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#10 /Users/sgtn/_dev/2015/honeybase/public/index.php(29): Laravel\Lumen\Application->run()
+#11 /Users/sgtn/_dev/2015/honeybase/server.php(12): require_once('/Users/sgtn/_de...')
+#12 {main}  
+[2015-07-29 03:34:05] lumen.ERROR: exception 'ReflectionException' with message 'Class App\Controllers\HomeController does not exist' in /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php:779
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(779): ReflectionClass->__construct('App\\Controllers...')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(659): Illuminate\Container\Container->build('App\\Controllers...', Array)
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(366): Illuminate\Container\Container->make('App\\Controllers...', Array)
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1213): Laravel\Lumen\Application->make('App\\Controllers...')
+#4 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1186): Laravel\Lumen\Application->callControllerAction(Array)
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1171): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1093): Laravel\Lumen\Application->handleFoundRoute(Array)
+#7 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1320): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#8 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1099): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#9 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#10 /Users/sgtn/_dev/2015/honeybase/public/index.php(29): Laravel\Lumen\Application->run()
+#11 /Users/sgtn/_dev/2015/honeybase/server.php(12): require_once('/Users/sgtn/_de...')
+#12 {main}  
+[2015-07-29 03:35:46] lumen.ERROR: exception 'InvalidArgumentException' with message 'View [index] not found.' in /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/view/FileViewFinder.php:140
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/view/FileViewFinder.php(77): Illuminate\View\FileViewFinder->findInPaths('index', Array)
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/view/Factory.php(145): Illuminate\View\FileViewFinder->find('index')
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/helpers.php(383): Illuminate\View\Factory->make('index', Array, Array)
+#3 /Users/sgtn/_dev/2015/honeybase/app/Controller/HomeController.php(14): view('index')
+#4 [internal function]: App\Controller\HomeController->index(Object(Illuminate\Http\Request))
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(526): call_user_func_array(Array, Array)
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1282): Illuminate\Container\Container->call(Array, Array)
+#7 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1247): Laravel\Lumen\Application->callControllerCallable(Array, Array)
+#8 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1218): Laravel\Lumen\Application->callLumenController(Object(App\Controller\HomeController), 'index', Array)
+#9 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1186): Laravel\Lumen\Application->callControllerAction(Array)
+#10 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1171): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#11 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1093): Laravel\Lumen\Application->handleFoundRoute(Array)
+#12 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1320): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#13 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1099): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#14 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#15 /Users/sgtn/_dev/2015/honeybase/public/index.php(29): Laravel\Lumen\Application->run()
+#16 /Users/sgtn/_dev/2015/honeybase/server.php(12): require_once('/Users/sgtn/_de...')
+#17 {main}  
