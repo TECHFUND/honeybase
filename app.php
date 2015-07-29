@@ -78,7 +78,7 @@ $app->singleton(
 |
 */
 
-// $app->register('App\Providers\AppServiceProvider');
+// $app->register('Jenssegers\Agent\AgentServiceProvider');
 // $app->register('Barryvdh\Debugbar\ServiceProvider');
 
 /*
