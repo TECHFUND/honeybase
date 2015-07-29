@@ -21,14 +21,6 @@
     });
     return res[res.length-1];
   }
-  HoneyCumb.ready = function(cb){
-    global.honeybase.current_user(function(flag, current_user){
-      global.onload = function(){
-        cb(flag, current_user);
-      }
-    });
-  }
-
 
   HoneyCumb.escape = (function (String) {
     var escapeMap = {

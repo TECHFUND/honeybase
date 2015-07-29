@@ -1,9 +1,11 @@
 (function(global){
-  function _A(){}
-  _A.prototype.a = function(){
+  function IndexController(){}
 
+  IndexController.run = function(){
+    $$(function(flag, current_user){
+      console.log(flag, current_user);
+    })
   }
 
-  global._A = _A;
-  return global;
+  IndexController.run();
 }(window));

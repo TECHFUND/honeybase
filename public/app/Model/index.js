@@ -1,9 +1,9 @@
 (function(global){
-  function _A(){}
-  _A.prototype.a = function(){
+  function Index(){}
+  Index.prototype.get = function(){
 
   }
 
-  global._A = _A;
+  global.Index = Index;
   return global;
 }(window));

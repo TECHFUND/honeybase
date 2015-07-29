@@ -1,9 +1,9 @@
 (function(global){
-  function _A(){}
-  _A.prototype.a = function(){
+  function IndexView(){}
+  IndexView.prototype.render = function(){
 
   }
 
-  global._A = _A;
+  global.IndexView = IndexView;
   return global;
 }(window));
