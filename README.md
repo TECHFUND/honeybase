@@ -1,4 +1,4 @@
-# Skill Shared
+# HoneyBase
 
 # Class Map
 - `/app/routes.php` and `app/accessor.json` is all basis.
@@ -32,6 +32,7 @@ ref `/public/index.php` by httpd
 - `tail -f storage/logs/lumen.log`
 
 ### Next features
+- Thiking about the suitable dir of js files
 - SSL (use tinycert)
 - Payment(Strip/Webpay)
 - Node SDK
