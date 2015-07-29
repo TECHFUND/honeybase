@@ -1,6 +1,5 @@
 /vendor
-.DS_Store
-/honeybase-sync-beta
+*/.DS_Store
 public/assets/img/generated/*.png
 public/assets/img/generated/*.jpg
 public/assets/img/generated/*.jpeg
