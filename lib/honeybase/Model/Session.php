@@ -1,8 +1,8 @@
-<?php namespace App\Models;
+<?php namespace Lib\HoneyBase\Model;
 
-use App\Util\NuLog;
-use App\Util\Util;
-use App\Models\MysqlAdaptor;
+use Util\Util\NuLog;
+use Util\Util\Util;
+use Lib\HoneyBase\Model\MysqlAdaptor;
 
 class Session {
   public static function create($user){

@@ -1,8 +1,8 @@
 <?php namespace Lib\HoneyBase\Middleware;
 
-use App\Util\NuLog;
-use App\Util\Util;
-use App\Models\User;
+use Util\Util\NuLog;
+use Util\Util\Util;
+use Lib\HoneyBase\Model\User;
 use Exception;
 
 class AccessorParser {
@@ -88,7 +88,7 @@ class AccessorParser {
 
   public function getAccessor(){
     try {
-      $this->accessor = Util::getJSON('../../app/accessor.json');
+      $this->accessor = Util::getJSON(__ROOT__. 'public/app/accessor.json');
       if($this->accessor == null){
         throw new Exception("Accessor parse error");
       } else {
@@ -101,7 +101,7 @@ class AccessorParser {
 
   public function isAllPermit() {
     $res = null;
-    if( property_exists($this->accessor, "*") ) {
+    if( isset($this->accessor) && property_exists($this->accessor, "*") ) {
       $path = "*";
       $res = $this->accessor->$path;
     }

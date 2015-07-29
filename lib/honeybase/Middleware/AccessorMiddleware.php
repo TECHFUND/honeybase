@@ -1,9 +1,9 @@
 <?php namespace Lib\HoneyBase\Middleware;
 
 use Closure;
-use App\Models\User;
-use App\Util\NuLog;
-use App\Util\Util;
+use Lib\HoneyBase\Model\User;
+use Util\Util\NuLog;
+use Util\Util\Util;
 
 class AccessorMiddleware {
 

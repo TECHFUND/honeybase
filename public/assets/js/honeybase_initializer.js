@@ -7,10 +7,10 @@
 
   // jQuery-like login check helper
   var $$ = function(cb){
-    global.honeybase.current_user(function(flag, current_user){
-      document.addEventListener('DOMContentLoaded', function(){
+    global.addEventListener("DOMContentLoaded", function(){
+      global.honeybase.current_user(function(flag, current_user){
         cb(flag, current_user);
-      }, false);
+      });
     });
   }
   global.$$ = $$;

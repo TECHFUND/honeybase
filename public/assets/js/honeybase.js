@@ -471,7 +471,7 @@
 
 	function $_ajax(method, url, params, cb) {
     var path = location.pathname;
-    if(path.slice(-1) == "/") path = path.slice(0, -1);
+    if(path != "/" && path.slice(-1) == "/") path = path.slice(0, -1);
     params.refferer = path;
 		var xhr = null;
 		if(window.XMLHttpRequest) {

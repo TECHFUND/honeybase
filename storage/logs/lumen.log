@@ -261,3 +261,128 @@ Stack trace:
 #15 /Users/sgtn/_dev/2015/honeybase/public/index.php(29): Laravel\Lumen\Application->run()
 #16 /Users/sgtn/_dev/2015/honeybase/server.php(12): require_once('/Users/sgtn/_de...')
 #17 {main}  
+[2015-07-29 10:41:11] lumen.ERROR: 
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/HoneyBase/Middleware/AccessorParser.php:98
+[VAL] - "fopen(..\/..\/app\/accessor.json): failed to open stream: No such file or directory"
+[CODE]>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+89:  public function getAccessor(){
+90:    try {
+91:      $this->accessor = Util::getJSON('../../app/accessor.json');
+92:      if($this->accessor == null){
+93:        throw new Exception("Accessor parse error");
+94:      } else {
+95:        return $this->accessor;
+96:      }
+97:    } catch (Exception $e) {
+98:      NuLog::error($e->getMessage(), __FILE__, __LINE__);
+99:    }
+100:  }
+101:
+102:  public function isAllPermit() {
+103:    $res = null;
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<[EOF]
+
+  
+[2015-07-29 10:41:11] lumen.ERROR: exception 'ErrorException' with message 'First parameter must either be an object or the name of an existing class' in /Users/sgtn/_dev/2015/honeybase/lib/HoneyBase/Middleware/AccessorParser.php:104
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}(2, 'First parameter...', '/Users/sgtn/_de...', 104, Array)
+#1 /Users/sgtn/_dev/2015/honeybase/lib/HoneyBase/Middleware/AccessorParser.php(104): property_exists(NULL, '*')
+#2 /Users/sgtn/_dev/2015/honeybase/lib/HoneyBase/Middleware/AccessorMiddleware.php(22): Lib\HoneyBase\Middleware\AccessorParser->isAllPermit()
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/pipeline/Pipeline.php(125): Lib\HoneyBase\Middleware\AccessorMiddleware->handle(Object(Illuminate\Http\Request), Object(Closure))
+#4 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/pipeline/Pipeline.php(101): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1317): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#7 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1168): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#8 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1093): Laravel\Lumen\Application->handleFoundRoute(Array)
+#9 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1320): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#10 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1099): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#11 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#12 /Users/sgtn/_dev/2015/honeybase/public/index.php(29): Laravel\Lumen\Application->run()
+#13 /Users/sgtn/_dev/2015/honeybase/server.php(12): require_once('/Users/sgtn/_de...')
+#14 {main}  
+[2015-07-29 10:53:13] lumen.ERROR: 
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/HoneyBase/Middleware/AccessorMiddleware.php:84
+[VAL] - "No path in accessor definition."
+[CODE]>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+75:          return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+76:        }
+77:      } else {
+78:        $msg = "No table in path definition.";
+79:        NuLog::error($msg, __FILE__, __LINE__);
+80:        return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+81:      }
+82:    } else {
+83:      $msg = "No path in accessor definition.";
+84:      NuLog::error($msg, __FILE__, __LINE__);
+85:      return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+86:    }
+87:  }
+88:}
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<[EOF]
+
+  
+[2015-07-29 10:54:29] lumen.ERROR: 
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/HoneyBase/Middleware/AccessorMiddleware.php:84
+[VAL] - "No path in accessor definition."
+[CODE]>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+75:          return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+76:        }
+77:      } else {
+78:        $msg = "No table in path definition.";
+79:        NuLog::error($msg, __FILE__, __LINE__);
+80:        return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+81:      }
+82:    } else {
+83:      $msg = "No path in accessor definition.";
+84:      NuLog::error($msg, __FILE__, __LINE__);
+85:      return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+86:    }
+87:  }
+88:}
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<[EOF]
+
+  
+[2015-07-29 10:55:31] lumen.ERROR: 
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/HoneyBase/Middleware/AccessorMiddleware.php:84
+[VAL] - "No path in accessor definition."
+[CODE]>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+75:          return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+76:        }
+77:      } else {
+78:        $msg = "No table in path definition.";
+79:        NuLog::error($msg, __FILE__, __LINE__);
+80:        return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+81:      }
+82:    } else {
+83:      $msg = "No path in accessor definition.";
+84:      NuLog::error($msg, __FILE__, __LINE__);
+85:      return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+86:    }
+87:  }
+88:}
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<[EOF]
+
+  
+[2015-07-29 10:55:49] lumen.ERROR: exception 'ReflectionException' with message 'Class App\Http\Controllers\AccountController does not exist' in /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php:779
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(779): ReflectionClass->__construct('App\\Http\\Contro...')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(659): Illuminate\Container\Container->build('App\\Http\\Contro...', Array)
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(366): Illuminate\Container\Container->make('App\\Http\\Contro...', Array)
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1213): Laravel\Lumen\Application->make('App\\Http\\Contro...')
+#4 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1186): Laravel\Lumen\Application->callControllerAction(Array)
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1167): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#6 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}(Object(Illuminate\Http\Request))
+#7 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/pipeline/Pipeline.php(141): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#8 /Users/sgtn/_dev/2015/honeybase/lib/HoneyBase/Middleware/AccessorMiddleware.php(41): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#9 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/pipeline/Pipeline.php(125): Lib\HoneyBase\Middleware\AccessorMiddleware->handle(Object(Illuminate\Http\Request), Object(Closure))
+#10 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#11 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/pipeline/Pipeline.php(101): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#12 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1317): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#13 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1168): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#14 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1093): Laravel\Lumen\Application->handleFoundRoute(Array)
+#15 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1320): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#16 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1099): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#17 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#18 /Users/sgtn/_dev/2015/honeybase/public/index.php(29): Laravel\Lumen\Application->run()
+#19 /Users/sgtn/_dev/2015/honeybase/server.php(12): require_once('/Users/sgtn/_de...')
+#20 {main}  

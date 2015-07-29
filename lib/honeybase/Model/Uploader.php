@@ -1,8 +1,8 @@
-<?php namespace App\Models;
+<?php namespace Lib\HoneyBase\Model;
 
-use App\Util\NuLog;
-use App\Util\Util;
-use App\Util\CommonFunctions;
+use Util\Util\NuLog;
+use Util\Util\Util;
+use Util\Util\CommonFunctions;
 
 class Uploader {
 

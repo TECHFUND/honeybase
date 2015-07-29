@@ -1,9 +1,9 @@
-<?php namespace Lib\HoneyBase\Controllers;
+<?php namespace Lib\HoneyBase\Controller;
 
-use Lib\HoneyBase\Controllers\Controller;
-use App\Models\MysqlAdaptor;
-use App\Models\User;
-use App\Models\Session;
+use Lib\HoneyBase\Controller\Controller;
+use Lib\HoneyBase\Model\MysqlAdaptor;
+use Lib\HoneyBase\Model\User;
+use Lib\HoneyBase\Model\Session;
 
 use Illuminate\Http\Response;
 use Illuminate\Http\Request;
@@ -14,14 +14,14 @@ use Facebook\FacebookRequest;
 use Facebook\GraphUser;
 use Facebook\FacebookRequestException;
 
-use App\Util\CommonFunctions;
-use App\Util\Mail;
-use App\Util\FB;
+use Util\Util\CommonFunctions;
+use Util\Util\Mail;
+use Util\Util\FB;
 use Auth;
 use Log;
 use Cookie;
-use App\Util\NuLog;
-use App\Util\Util;
+use Util\Util\NuLog;
+use Util\Util\Util;
 
 
 class AccountController extends Controller {
