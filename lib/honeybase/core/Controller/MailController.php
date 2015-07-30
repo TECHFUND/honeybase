@@ -1,6 +1,6 @@
-<?php namespace Lib\HoneyBase\Controllers;
+<?php namespace HoneyBase\Core\Controller;
 
-use Lib\HoneyBase\Controllers\Controller;
+use HoneyBase\Core\Controller\Controller;
 use App\Models\MysqlAdaptor;
 use App\Util\Mail;
 

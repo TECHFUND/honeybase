@@ -1,7 +1,7 @@
-<?php namespace Lib\HoneyBase\Middleware;
+<?php namespace HoneyBase\Core\Middleware;
 
 use Closure;
-use Lib\HoneyBase\Model\User;
+use HoneyBase\Core\Model\User;
 use Util\Util\NuLog;
 use Util\Util\Util;
 

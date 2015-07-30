@@ -93,8 +93,10 @@ $app->singleton(
 */
 
 require __DIR__.'/app/routes.php';
-require __DIR__.'/lib/honeybase/routes.php';
+require __DIR__.'/lib/honeybase/core/routes.php';
 
-$db = new Lib\HoneyBase\Model\MysqlAdaptor();
+
+// create db automatically
+$db = new HoneyBase\Core\Model\MysqlAdaptor();
 
 return $app;

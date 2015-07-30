@@ -1,9 +1,9 @@
-<?php namespace Lib\HoneyBase\Controller;
+<?php namespace HoneyBase\Core\Controller;
 
-use Lib\HoneyBase\Controller\Controller;
-use Lib\HoneyBase\Model\MysqlAdaptor;
-use Lib\HoneyBase\Model\User;
-use Lib\HoneyBase\Model\Session;
+use HoneyBase\Core\Controller\Controller;
+use HoneyBase\Core\Model\MysqlAdaptor;
+use HoneyBase\Core\Model\User;
+use HoneyBase\Core\Model\Session;
 
 use Illuminate\Http\Response;
 use Illuminate\Http\Request;

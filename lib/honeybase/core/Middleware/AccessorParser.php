@@ -1,8 +1,8 @@
-<?php namespace Lib\HoneyBase\Middleware;
+<?php namespace HoneyBase\Core\Middleware;
 
 use Util\Util\NuLog;
 use Util\Util\Util;
-use Lib\HoneyBase\Model\User;
+use HoneyBase\Core\Model\User;
 use Exception;
 
 class AccessorParser {

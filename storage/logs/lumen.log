@@ -404,3 +404,125 @@ Stack trace:
 #13 /Users/sgtn/_dev/2015/honeybase/public/index.php(29): Laravel\Lumen\Application->run()
 #14 /Users/sgtn/_dev/2015/honeybase/server.php(12): require_once('/Users/sgtn/_de...')
 #15 {main}  
+[2015-07-30 03:40:46] lumen.ERROR: exception 'InvalidArgumentException' with message 'View [test.integration.index] not found.' in /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/view/FileViewFinder.php:140
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/view/FileViewFinder.php(77): Illuminate\View\FileViewFinder->findInPaths('test.integratio...', Array)
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/view/Factory.php(145): Illuminate\View\FileViewFinder->find('test.integratio...')
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/helpers.php(383): Illuminate\View\Factory->make('test.integratio...', Array, Array)
+#3 /Users/sgtn/_dev/2015/honeybase/lib/honeybase/core/routes.php(28): view('test.integratio...')
+#4 [internal function]: Closure->{closure}()
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(526): call_user_func_array(Object(Closure), Array)
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1197): Illuminate\Container\Container->call(Object(Closure), Array)
+#7 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1171): Laravel\Lumen\Application->callActionOnArrayBasedRoute(Array)
+#8 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1093): Laravel\Lumen\Application->handleFoundRoute(Array)
+#9 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1320): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#10 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1099): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#11 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#12 /Users/sgtn/_dev/2015/honeybase/public/index.php(29): Laravel\Lumen\Application->run()
+#13 /Users/sgtn/_dev/2015/honeybase/server.php(12): require_once('/Users/sgtn/_de...')
+#14 {main}  
+[2015-07-30 04:16:43] lumen.ERROR: exception 'ErrorException' with message 'Undefined index: REQUEST_METHOD' in /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php:1350
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1350): Laravel\Lumen\Application->Laravel\Lumen\{closure}(8, 'Undefined index...', '/Users/sgtn/_de...', 1350, Array)
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1086): Laravel\Lumen\Application->getMethod()
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#3 /Users/sgtn/_dev/2015/honeybase/lib/honeybase/test/index.php(4): Laravel\Lumen\Application->run()
+#4 {main}  
+[2015-07-30 04:18:38] lumen.ERROR: exception 'ErrorException' with message 'Undefined index: REQUEST_METHOD' in /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php:1350
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1350): Laravel\Lumen\Application->Laravel\Lumen\{closure}(8, 'Undefined index...', '/Users/sgtn/_de...', 1350, Array)
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1086): Laravel\Lumen\Application->getMethod()
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#3 /Users/sgtn/_dev/2015/honeybase/lib/honeybase/test/index.php(4): Laravel\Lumen\Application->run()
+#4 {main}  
+[2015-07-30 04:20:06] lumen.ERROR: exception 'ErrorException' with message 'Undefined index: REQUEST_METHOD' in /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php:1350
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1350): Laravel\Lumen\Application->Laravel\Lumen\{closure}(8, 'Undefined index...', '/Users/sgtn/_de...', 1350, Array)
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1086): Laravel\Lumen\Application->getMethod()
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#3 /Users/sgtn/_dev/2015/honeybase/lib/honeybase/test/index.php(4): Laravel\Lumen\Application->run()
+#4 {main}  
+[2015-07-30 04:20:18] lumen.ERROR: exception 'ErrorException' with message 'Undefined index: REQUEST_METHOD' in /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php:1350
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1350): Laravel\Lumen\Application->Laravel\Lumen\{closure}(8, 'Undefined index...', '/Users/sgtn/_de...', 1350, Array)
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1086): Laravel\Lumen\Application->getMethod()
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#3 /Users/sgtn/_dev/2015/honeybase/lib/honeybase/test/index.php(4): Laravel\Lumen\Application->run()
+#4 {main}  
+[2015-07-30 04:20:26] lumen.ERROR: exception 'ErrorException' with message 'Undefined index: REQUEST_METHOD' in /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php:1350
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1350): Laravel\Lumen\Application->Laravel\Lumen\{closure}(8, 'Undefined index...', '/Users/sgtn/_de...', 1350, Array)
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1086): Laravel\Lumen\Application->getMethod()
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#3 /Users/sgtn/_dev/2015/honeybase/lib/honeybase/test/index.php(4): Laravel\Lumen\Application->run()
+#4 {main}  
+[2015-07-30 04:20:50] lumen.ERROR: exception 'ErrorException' with message 'Undefined index: REQUEST_METHOD' in /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php:1350
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1350): Laravel\Lumen\Application->Laravel\Lumen\{closure}(8, 'Undefined index...', '/Users/sgtn/_de...', 1350, Array)
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1086): Laravel\Lumen\Application->getMethod()
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#3 /Users/sgtn/_dev/2015/honeybase/lib/honeybase/test/index.php(4): Laravel\Lumen\Application->run()
+#4 {main}  
+[2015-07-30 04:21:04] lumen.ERROR: exception 'ErrorException' with message 'Undefined index: REQUEST_METHOD' in /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php:1350
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1350): Laravel\Lumen\Application->Laravel\Lumen\{closure}(8, 'Undefined index...', '/Users/sgtn/_de...', 1350, Array)
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1086): Laravel\Lumen\Application->getMethod()
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#3 /Users/sgtn/_dev/2015/honeybase/lib/honeybase/test/index.php(4): Laravel\Lumen\Application->run()
+#4 {main}  
+[2015-07-30 04:21:06] lumen.ERROR: exception 'ErrorException' with message 'Undefined index: REQUEST_METHOD' in /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php:1350
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1350): Laravel\Lumen\Application->Laravel\Lumen\{closure}(8, 'Undefined index...', '/Users/sgtn/_de...', 1350, Array)
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1086): Laravel\Lumen\Application->getMethod()
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#3 /Users/sgtn/_dev/2015/honeybase/lib/honeybase/test/index.php(4): Laravel\Lumen\Application->run()
+#4 {main}  
+[2015-07-30 04:21:31] lumen.ERROR: exception 'ErrorException' with message 'Undefined index: REQUEST_METHOD' in /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php:1350
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1350): Laravel\Lumen\Application->Laravel\Lumen\{closure}(8, 'Undefined index...', '/Users/sgtn/_de...', 1350, Array)
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1086): Laravel\Lumen\Application->getMethod()
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#3 /Users/sgtn/_dev/2015/honeybase/lib/honeybase/test/index.php(4): Laravel\Lumen\Application->run()
+#4 {main}  
+[2015-07-30 04:21:37] lumen.ERROR: exception 'ErrorException' with message 'Undefined index: REQUEST_METHOD' in /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php:1350
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1350): Laravel\Lumen\Application->Laravel\Lumen\{closure}(8, 'Undefined index...', '/Users/sgtn/_de...', 1350, Array)
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1086): Laravel\Lumen\Application->getMethod()
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#3 /Users/sgtn/_dev/2015/honeybase/lib/honeybase/test/index.php(4): Laravel\Lumen\Application->run()
+#4 {main}  
+[2015-07-30 04:21:53] lumen.ERROR: exception 'ErrorException' with message 'Undefined index: REQUEST_METHOD' in /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php:1350
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1350): Laravel\Lumen\Application->Laravel\Lumen\{closure}(8, 'Undefined index...', '/Users/sgtn/_de...', 1350, Array)
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1086): Laravel\Lumen\Application->getMethod()
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#3 /Users/sgtn/_dev/2015/honeybase/lib/honeybase/test/index.php(6): Laravel\Lumen\Application->run()
+#4 {main}  
+[2015-07-30 04:22:00] lumen.ERROR: exception 'ErrorException' with message 'Undefined index: REQUEST_METHOD' in /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php:1350
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1350): Laravel\Lumen\Application->Laravel\Lumen\{closure}(8, 'Undefined index...', '/Users/sgtn/_de...', 1350, Array)
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1086): Laravel\Lumen\Application->getMethod()
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#3 /Users/sgtn/_dev/2015/honeybase/lib/honeybase/test/index.php(4): Laravel\Lumen\Application->run()
+#4 {main}  
+[2015-07-30 04:45:25] lumen.ERROR: exception 'ErrorException' with message 'Undefined index: REQUEST_METHOD' in /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php:1350
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1350): Laravel\Lumen\Application->Laravel\Lumen\{closure}(8, 'Undefined index...', '/Users/sgtn/_de...', 1350, Array)
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1086): Laravel\Lumen\Application->getMethod()
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#3 /Users/sgtn/_dev/2015/honeybase/lib/honeybase/test/tester(8): Laravel\Lumen\Application->run()
+#4 {main}  
+[2015-07-30 04:45:27] lumen.ERROR: exception 'ErrorException' with message 'Undefined index: REQUEST_METHOD' in /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php:1350
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1350): Laravel\Lumen\Application->Laravel\Lumen\{closure}(8, 'Undefined index...', '/Users/sgtn/_de...', 1350, Array)
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1086): Laravel\Lumen\Application->getMethod()
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#3 /Users/sgtn/_dev/2015/honeybase/lib/honeybase/test/tester(8): Laravel\Lumen\Application->run()
+#4 {main}  
+[2015-07-30 04:46:18] lumen.ERROR: exception 'ErrorException' with message 'Undefined index: REQUEST_METHOD' in /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php:1350
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1350): Laravel\Lumen\Application->Laravel\Lumen\{closure}(8, 'Undefined index...', '/Users/sgtn/_de...', 1350, Array)
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1086): Laravel\Lumen\Application->getMethod()
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#3 /Users/sgtn/_dev/2015/honeybase/lib/honeybase/test/tester(8): Laravel\Lumen\Application->run()
+#4 {main}  

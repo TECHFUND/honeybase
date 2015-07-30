@@ -1,6 +1,7 @@
 <?php
 
 $app->routeMiddleware([
+  "login" => "App\Middleware\LoginMiddleware"
 ]);
 
 

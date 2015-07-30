@@ -1,9 +1,9 @@
-<?php namespace Lib\HoneyBase\Model;
+<?php namespace HoneyBase\Core\Model;
 
 use Util\Util\NuLog;
 use Util\Util\Util;
 use Util\Util\CommonFunctions;
-use Lib\HoneyBase\Model\MysqlAdaptor;
+use HoneyBase\Core\Model\MysqlAdaptor;
 
 class User {
   public static function all(){

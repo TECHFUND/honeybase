@@ -1,4 +1,4 @@
-<?php namespace Lib\HoneyBase\Controller;
+<?php namespace HoneyBase\Core\Controller;
 
 use Laravel\Lumen\Routing\Controller as BaseController;
 

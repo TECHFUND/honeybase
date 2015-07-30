@@ -1,4 +1,4 @@
-<?php namespace Lib\HoneyBase\Model;
+<?php namespace HoneyBase\Core\Model;
 
 use mysqli;
 use Log;

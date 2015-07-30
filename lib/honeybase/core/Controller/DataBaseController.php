@@ -1,6 +1,6 @@
-<?php namespace Lib\HoneyBase\Controllers;
+<?php namespace HoneyBase\Core\Controllers;
 
-use Lib\HoneyBase\Controllers\Controller;
+use HoneyBase\Controllers\Controller;
 use App\Models\MysqlAdaptor;
 use App\Models\Uploader;
 use App\Models\User;

@@ -1,4 +1,4 @@
-<?php namespace Lib\HoneyBase\Middleware;
+<?php namespace App\Middleware;
 
 use Closure;
 use App\Models\User;
