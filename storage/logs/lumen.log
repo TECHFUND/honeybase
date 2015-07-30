@@ -526,3 +526,10 @@ Stack trace:
 #2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
 #3 /Users/sgtn/_dev/2015/honeybase/lib/honeybase/test/tester(8): Laravel\Lumen\Application->run()
 #4 {main}  
+[2015-07-30 04:48:29] lumen.ERROR: exception 'ErrorException' with message 'Undefined index: REQUEST_URI' in /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php:1363
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1363): Laravel\Lumen\Application->Laravel\Lumen\{closure}(8, 'Undefined index...', '/Users/sgtn/_de...', 1363, Array)
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1087): Laravel\Lumen\Application->getPathInfo()
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#3 /Users/sgtn/_dev/2015/honeybase/lib/honeybase/test/tester(10): Laravel\Lumen\Application->run()
+#4 {main}  
