@@ -386,3 +386,21 @@ Stack trace:
 #18 /Users/sgtn/_dev/2015/honeybase/public/index.php(29): Laravel\Lumen\Application->run()
 #19 /Users/sgtn/_dev/2015/honeybase/server.php(12): require_once('/Users/sgtn/_de...')
 #20 {main}  
+[2015-07-30 01:49:16] lumen.ERROR: exception 'ErrorException' with message 'fopen(/Users/sgtn/_dev/2015/honeybase/config/../public/app/accessor.json): failed to open stream: No such file or directory' in /Users/sgtn/_dev/2015/honeybase/util/Util/Util.php:9
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}(2, 'fopen(/Users/sg...', '/Users/sgtn/_de...', 9, Array)
+#1 /Users/sgtn/_dev/2015/honeybase/util/Util/Util.php(9): fopen('/Users/sgtn/_de...', 'r')
+#2 /Users/sgtn/_dev/2015/honeybase/lib/HoneyBase/Middleware/AccessorParser.php(90): Util\Util\Util::getJSON('/Users/sgtn/_de...')
+#3 /Users/sgtn/_dev/2015/honeybase/lib/HoneyBase/Middleware/AccessorMiddleware.php(13): Lib\HoneyBase\Middleware\AccessorParser->setAccessor('public/app/acce...')
+#4 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/pipeline/Pipeline.php(125): Lib\HoneyBase\Middleware\AccessorMiddleware->handle(Object(Illuminate\Http\Request), Object(Closure))
+#5 [internal function]: Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/pipeline/Pipeline.php(101): call_user_func(Object(Closure), Object(Illuminate\Http\Request))
+#7 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1317): Illuminate\Pipeline\Pipeline->then(Object(Closure))
+#8 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1168): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#9 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1093): Laravel\Lumen\Application->handleFoundRoute(Array)
+#10 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1320): Laravel\Lumen\Application->Laravel\Lumen\{closure}()
+#11 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1099): Laravel\Lumen\Application->sendThroughPipeline(Array, Object(Closure))
+#12 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(1037): Laravel\Lumen\Application->dispatch(NULL)
+#13 /Users/sgtn/_dev/2015/honeybase/public/index.php(29): Laravel\Lumen\Application->run()
+#14 /Users/sgtn/_dev/2015/honeybase/server.php(12): require_once('/Users/sgtn/_de...')
+#15 {main}  
