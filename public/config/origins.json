@@ -1,0 +1,5 @@
+{
+  "development" : "http://localhost",
+  "staging" : "http://staging.com",
+  "production" : "http://production.com"
+}
