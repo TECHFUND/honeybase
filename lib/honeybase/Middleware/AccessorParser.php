@@ -86,9 +86,12 @@ class AccessorParser {
     return $current_user;
   }
 
+  public function setAccessor($rel_path){
+    $this->accessor = Util::getJSON(__ROOT__. $rel_path);
+  }
+
   public function getAccessor(){
     try {
-      $this->accessor = Util::getJSON(__ROOT__. 'public/app/accessor.json');
       if($this->accessor == null){
         throw new Exception("Accessor parse error");
       } else {

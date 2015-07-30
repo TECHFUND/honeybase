@@ -10,6 +10,7 @@ class AccessorMiddleware {
   public function handle($request, Closure $next){
 
     $parser = new AccessorParser($request);
+    $parser->setAccessor('public/app/accessor.json'); // テスト用accessorのpathを参照したい
     $header = ['Access-Control-Allow-Origin' => ORIGIN, "Access-Control-Allow-Credentials"=>"true"];
 
 

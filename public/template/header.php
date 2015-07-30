@@ -23,10 +23,10 @@
   <script src="http://connect.facebook.net/en_US/sdk.js"></script>
   <script src="https://d1fxtkz8shb9d2.cloudfront.net/websocket-multiplex-0.1.js"></script>
   <script src="http://cdn.jsdelivr.net/sockjs/0.3.4/sockjs.min.js"></script>
-  <script src="/assets/js/honeybase.js"></script>
-  <script src="/assets/js/honeybase_initializer.js"></script>
-  <script src="/assets/js/honeycumb.js"></script>
-  <script src="/assets/js/notice.js"></script>
+  <script src="/assets/lib/honeybase.js"></script>
+  <script src="/assets/lib/honeybase_initializer.js"></script>
+  <script src="/assets/lib/honeycumb.js"></script>
+  <script src="/assets/lib/notice.js"></script>
   <!-- honeybase -->
 </head>
 <body>
