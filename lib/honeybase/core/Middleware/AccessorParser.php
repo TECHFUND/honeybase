@@ -35,6 +35,7 @@ class AccessorParser {
     $path_array = explode("/", $this->path);
     $this->action = array_pop($path_array);
     $this->refferer = $this->data['refferer'];
+    $this->defined_database_actions = ["insert", "update", "select", "delete", "search"];
     $this->defined_honeybase_actions = ["signup", "signin", "auth", "logout", "current_user", "uploader"];
   }
 
@@ -54,7 +55,7 @@ class AccessorParser {
       if(array_key_exists("value",$this->data)){
         $value = json_decode($this->data['value']);
 
-        if($this->action == "insert" || $this->action == "update" || $this->action == "select" || $this->action == "search"){
+        if( in_array($this->action, $this->defined_database_actions) ){
           if($value == null){
             throw new Exception("Value parse error");
           } else {

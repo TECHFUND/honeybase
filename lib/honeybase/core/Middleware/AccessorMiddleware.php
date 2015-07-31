@@ -12,7 +12,7 @@ class AccessorMiddleware {
     $parser = new AccessorParser($request);
     if( $request->input("isTest") ){
       $type = $request->input("testType");
-      $parser->setAccessor('lib/honeybase/test/integration/accessors/accessor_'.$type.'.json');
+      $parser->setAccessor('lib/honeybase/test/integration/accessors/'.$type.'.json');
     } else {
       $parser->setAccessor('app/accessor.json');
     }

@@ -378,6 +378,8 @@
       return this.select(q, cb);
 		},
 
+
+    /* no accessor counting method  */
     count: function(query, cb){
       var self = this;
   	  var params= {};
@@ -391,19 +393,33 @@
         var count = parseInt(res.data);
         if(typeof count == "number"){
           if(cb) cb(res.flag, count);
+        } else {
+          throw new Error("db.count return type error");
         }
       });
     },
+    /* no accessor id getter method  */
     first: function(cb){
 			var params = { table : this.table };
       $_ajax("GET", this.db+"/first", params, function(res){
-        if(cb) cb(res.flag, res.data);
+        var id = parseInt(res.data);
+        if(typeof id == "number"){
+          if(cb) cb(res.flag, id);
+        } else {
+          throw new Error("db.first return type error");
+        }
       });
     },
+    /* no accessor id getter method  */
     last: function(cb){
 			var params = { table : this.table };
       $_ajax("GET", this.db+"/last", params, function(res){
-        if(cb) cb(res.flag, res.data);
+        var id = parseInt(res.data);
+        if(typeof id == "number"){
+          if(cb) cb(res.flag, id);
+        } else {
+          throw new Error("db.first return type error");
+        }
       });
     }
 	}
