@@ -1,8 +1,12 @@
 # HoneyBase
 
 HoneyBase is prototyping-oriented framework.
+
 It allows you 'no backend like' development.
-Actually, there's lumen-based backend, but you don't need to touch it, and also you can touch it for further development.
+
+Actually, there's lumen-based backend, but you don't need to touch it, and also you can touch it for
+further development.
+
 It all your right to keep maintanable or code like cowboy. You just focus on what you want, what people want.
 
 ---

@@ -2,7 +2,7 @@
 
 ## Usage
 - `gulp`
-- `http://localhost:8000`
+- `http://localhost:8001`
 
 ## Checking Behavior
 - JavaScript SDK initialized?
