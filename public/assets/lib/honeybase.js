@@ -41,6 +41,8 @@
 
   global.env = env;
   global.VERSION = VERSION;
+  global.isTest = false;
+  global.testType = "";
   return global;
 }(window));
 
@@ -51,13 +53,10 @@
 	function HoneyBase(host) {
 		this.host = format_host(host);
     this.api = this.host + "api/" + VERSION;
+    this.env = env;
 	}
 
 	HoneyBase.prototype = {
-    setHost : function(host){
-      this.host = format_host(host);
-      this.api = this.host + "api/" + VERSION;
-    },
     /************************************
      * OAUTH
      ************************************/
@@ -179,6 +178,14 @@
         cb(res.flag, res.data);
       });
     },
+    switchTestState : function(){
+      isTest = true;
+      this.host = format_host("http://localhost:8001"); // テスト時はローカル鯖8001で動かすのどうなん？
+      this.api = this.host + "api/" + VERSION;
+    },
+    setTestType : function(name){
+      testType = name;
+    },
 
 
 /************************************
@@ -265,9 +272,15 @@
 
   Uploader.prototype = {
     send : function(form_name, file_input_name, cb){
-      // Please use this inside of `$form.change` listener :)
+      // This function is used inside of `$form.change` listener :)
+      var path = location.pathname;
+      if(path != "/" && path.slice(-1) == "/") path = path.slice(0, -1);
       var self = this, fd = new FormData(document.forms.namedItem(form_name));
       fd.append("key", file_input_name);
+      fd.append("env", env);
+      fd.append("isTest", isTest);
+      fd.append("testType", testType);
+      fd.append("refferer", path);
       formAjax();
 
       function formAjax(){
@@ -477,6 +490,9 @@
     var path = location.pathname;
     if(path != "/" && path.slice(-1) == "/") path = path.slice(0, -1);
     params.refferer = path;
+    params.env = env;
+    params.isTest = isTest;
+    params.testType = testType;
 		var xhr = null;
 		if(window.XMLHttpRequest) {
 			xhr = new XMLHttpRequest();

@@ -1,13 +1,13 @@
-<?php namespace HoneyBase\Core\Controllers;
+<?php namespace HoneyBase\Core\Controller;
 
-use HoneyBase\Controllers\Controller;
-use App\Models\MysqlAdaptor;
-use App\Models\Uploader;
-use App\Models\User;
+use HoneyBase\Core\Controller\Controller;
+use Honeybase\Core\Model\MysqlAdaptor;
+use Honeybase\Core\Model\Uploader;
+use Honeybase\Core\Model\User;
 use Illuminate\Http\Response;
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Model;
-use App\Util\NuLog;
+use Util\Util\NuLog;
 
 class DataBaseController extends Controller {
 

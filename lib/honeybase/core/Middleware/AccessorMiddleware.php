@@ -10,7 +10,14 @@ class AccessorMiddleware {
   public function handle($request, Closure $next){
 
     $parser = new AccessorParser($request);
-    $parser->setAccessor('app/accessor.json'); // テスト用accessorのpathを参照したい
+    // if($request->input("env") == "test") $parser->setAccessor('lib/honeybase/test/integration/accessor.json');
+    // input("env")が、どんなtest accessorにアクセスするかの情報を持ってるといい
+    if( $request->input("isTest") ){
+      $type = $request->input("testType");
+      $parser->setAccessor('lib/honeybase/test/integration/config/accessor_'.$type.'.json');
+    } else {
+      $parser->setAccessor('app/accessor.json');
+    }
     $header = ['Access-Control-Allow-Origin' => ORIGIN, "Access-Control-Allow-Credentials"=>"true"];
 
 

@@ -1,0 +1,13 @@
+{
+  "/" : {
+    "honeybase" : [],
+    "database" : {
+      "sample" : {
+        "insert" : {
+          "role" : "all",
+          "params" : []
+        }
+      }
+    }
+  }
+}

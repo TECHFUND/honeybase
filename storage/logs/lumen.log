@@ -607,3 +607,69 @@ Stack trace:
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<[EOF]
 
   
+[2015-07-31 09:18:10] lumen.ERROR: 
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorMiddleware.php:82
+[VAL] - "No table in path definition."
+[CODE]>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+73:            return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+74:          }
+75:        } else {
+76:          $msg = "No action in table definition.";
+77:          NuLog::error($msg, __FILE__, __LINE__);
+78:          return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+79:        }
+80:      } else {
+81:        $msg = "No table in path definition.";
+82:        NuLog::error($msg, __FILE__, __LINE__);
+83:        return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+84:      }
+85:    } else {
+86:      $msg = "No path in accessor definition.";
+87:      NuLog::error($msg, __FILE__, __LINE__);
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<[EOF]
+
+  
+[2015-07-31 09:18:10] lumen.ERROR: 
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorMiddleware.php:82
+[VAL] - "No table in path definition."
+[CODE]>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+73:            return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+74:          }
+75:        } else {
+76:          $msg = "No action in table definition.";
+77:          NuLog::error($msg, __FILE__, __LINE__);
+78:          return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+79:        }
+80:      } else {
+81:        $msg = "No table in path definition.";
+82:        NuLog::error($msg, __FILE__, __LINE__);
+83:        return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+84:      }
+85:    } else {
+86:      $msg = "No path in accessor definition.";
+87:      NuLog::error($msg, __FILE__, __LINE__);
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<[EOF]
+
+  
+[2015-07-31 09:25:55] lumen.ERROR: 
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Model/MysqlAdaptor.php:486
+[VAL] - "[2015-07-31 09:25:55]Query failed by:CREATE TABLE IF NOT EXISTS `sample` (`id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,`created_at` bigint(20),`updated_at` bigint(20),PRIMARY KEY (`id`), UNIQUE KEY `id` (`id`)) ENGINE=innoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;\n"
+[CODE]>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+477:			// auto commit to OFF
+478:			$this->database->autocommit(FALSE);
+479:
+480:			// query
+481:			$result = mysqli_query($this->database, $sql);
+482:
+483:			if (0 <= $this->database->affected_rows) {
+484:				// Roll back if there were rows affected is not one line
+485:				$this->database->rollback();
+486:        $this->errorReport($sql, __FILE__, __LINE__);
+487:			} else {
+488:				// Had row affected commit if one line
+489:				$this->database->commit();
+490:				$return_flg = true;
+491:			}
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<[EOF]
+
+  
