@@ -5,18 +5,30 @@
 - `http://localhost:8001`
 
 ## Checking Behavior
+
+### Context `all`
 - JavaScript SDK initialized?
 - Auth function called?
 - DB function returned?
+- HB function returned?
 - Query function returned?
 - PubSub function returned?
-- Accessor works in particular condition?
+
+### Context `sample-all`
+- DB function returned?
+- HB function returned?
+- ↑call as "functions"
+
+### Context `nopath`, `notable`, `noaction`, `not mathced role`, `not mathced role`
+- Functions returns correct error message?
+
+### Context `typopath`, `typotable`, `typoaction`, `typot mathced role`, `typot mathced role`
+- Functions returns correct error message?
 
 ## Not Checking Behavior
-- Accessor works in almost all condition?
 - Auth function returned?
+- Auth function validated by accessor?
 - Is HTTPS secure?
-
-## Next features
-- Temporary `test` environment & test accessor needed
-- Various accessor definition should be checked in unit test (DI)
+- Context `sample-login`
+- Context `sample-owner`
+- Context `sample-original`

@@ -673,3 +673,47 @@ Stack trace:
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<[EOF]
 
   
+[2015-07-31 09:30:10] lumen.ERROR: 
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:357
+[VAL] - "bad parameters"
+[CODE]>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+348:    try {
+349:      if( isset($this->value) ){
+350:        foreach($this->value as $_key => $_value){
+351:          if( !$this->isValidParam($_key) ){ // =値をうまくとれてない
+352:            throw new Exception("bad parameters");
+353:          }
+354:        }
+355:      }
+356:    } catch (Exception $e) {
+357:      NuLog::error($e->getMessage(), __FILE__, __LINE__);
+358:    }
+359:  }
+360:
+361:  private function isValidParam($_key) {
+362:    $result = false;
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<[EOF]
+
+  
+[2015-07-31 09:30:10] lumen.ERROR: 
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorMiddleware.php:82
+[VAL] - "No action in table definition."
+[CODE]>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+73:              return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+74:            }
+75:          } else {
+76:            $msg = "No role or params in action definition.";
+77:            NuLog::error($msg, __FILE__, __LINE__);
+78:            return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+79:          }
+80:        } else {
+81:          $msg = "No action in table definition.";
+82:          NuLog::error($msg, __FILE__, __LINE__);
+83:          return response(['flag'=>false, "error_message"=>$msg], 503, $header);
+84:        }
+85:      } else {
+86:        $msg = "No table in path definition.";
+87:        NuLog::error($msg, __FILE__, __LINE__);
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<[EOF]
+
+  
