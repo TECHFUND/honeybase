@@ -16,10 +16,10 @@
 ### Context `sample-all`
 - Functions returns correct error message?
 
-### Context `no path`, `no table`, `no action`, `not mathced role`, `not mathced role`
+### Context `no-path`, `no-table`, `no-action`, `not-matched-role`
 - Functions returns correct error message?
 
-### Context `typo path`, `typo table`, `typo action`, `typo role`, `typo role`
+### Context `typo-path`, `typo-table`, `typo-action`, `typo-role`
 - Functions returns correct error message?
 
 ## Not Covered Behavior
