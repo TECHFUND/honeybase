@@ -19,10 +19,10 @@
 - HB function returned?
 - ↑call as "functions"
 
-### Context `nopath`, `notable`, `noaction`, `not mathced role`, `not mathced role`
+### Context `no path`, `no table`, `no action`, `not mathced role`, `not mathced role`
 - Functions returns correct error message?
 
-### Context `typopath`, `typotable`, `typoaction`, `typot mathced role`, `typot mathced role`
+### Context `typo path`, `typo table`, `typo action`, `typo role`, `typo role`
 - Functions returns correct error message?
 
 ## Not Checking Behavior
