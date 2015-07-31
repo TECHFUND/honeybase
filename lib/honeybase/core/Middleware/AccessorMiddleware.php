@@ -45,9 +45,9 @@ class AccessorMiddleware {
       $parser->setDatabase();
       $isValidTable = $parser->checkOwnerAlias(); // owner_idを独自定義しているtableを解析して後で使えるようにする
       $_database = $parser->getDatabase();
-      if( $isValidTable ){
+      $table_name = $parser->getTableName();
+      if( $isValidTable && property_exists($_database, $table_name) ){
         $path_action = $parser->action;
-        $table_name = $parser->getTableName();
         $_table = $_database->$table_name;
         $parser->setTable($_table);
         if( property_exists($_table, $path_action) ){

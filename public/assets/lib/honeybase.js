@@ -56,6 +56,7 @@
 	HoneyBase.prototype = {
     setHost : function(host){
       this.host = format_host(host);
+      this.api = this.host + "api/" + VERSION;
     },
     /************************************
      * OAUTH
