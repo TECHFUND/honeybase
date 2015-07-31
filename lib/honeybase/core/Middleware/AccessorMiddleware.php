@@ -10,11 +10,9 @@ class AccessorMiddleware {
   public function handle($request, Closure $next){
 
     $parser = new AccessorParser($request);
-    // if($request->input("env") == "test") $parser->setAccessor('lib/honeybase/test/integration/accessor.json');
-    // input("env")が、どんなtest accessorにアクセスするかの情報を持ってるといい
     if( $request->input("isTest") ){
       $type = $request->input("testType");
-      $parser->setAccessor('lib/honeybase/test/integration/config/accessor_'.$type.'.json');
+      $parser->setAccessor('lib/honeybase/test/integration/accessors/accessor_'.$type.'.json');
     } else {
       $parser->setAccessor('app/accessor.json');
     }
