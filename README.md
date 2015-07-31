@@ -10,7 +10,7 @@ It all your right to keep maintanable or code like cowboy. You just focus on wha
 # Class Map
 
 ## Definition of All
-- `/app/routes.php`, `public/js/accessor.json`, `database/migrations/`
+- `/app/routes.php`, `app/accessor.json`, `database/migrations/`
 
 ## Backend Model and Controller
 - `/app/Controller`, `/app/Model`, `/app/Middleware`
