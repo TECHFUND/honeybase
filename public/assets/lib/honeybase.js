@@ -213,6 +213,10 @@
       this._mailer = new Mailer(this.api);
       return this._mailer;
     },
+    logger: function(){
+      this._logger = new Logger(this.api);
+      return this._logger;
+    },
     ajax: function(method, url, params, cb){
       $_ajax(method, url, params, cb);
     }
@@ -295,6 +299,38 @@
     }
   }
 
+/************************************
+ * Logger
+ ************************************/
+  function Logger(host){
+    this.path = host+"/logger/";
+  }
+  Logger.prototype = {
+    info : function(context, cb){
+      this.send("info", context, cb);
+    },
+    error : function(context, cb){
+      this.send("error", context, cb);
+    },
+    warn : function(context, cb){
+      this.send("warn", context, cb);
+    },
+    send : function(type, context, cb){
+      var self = this;
+      self.validator(context);
+
+      var params = {};
+      params.path = location.pathname;
+      params.context = context;
+
+  		$_ajax("POST", self.path+type, params, function(res) {
+        if(cb) cb(res.flag);
+      });
+    },
+    validator : function (context){
+      if( typeof context !== "string" ) throw new TypeError("Context should be string");
+    }
+  }
 
 /************************************
  * DATABASE

@@ -25,3 +25,4 @@ $app->get('api/v1/db/count', 'HoneyBase\Core\Controller\DataBaseController@count
 $app->get('api/v1/db/first', ['uses'=>'HoneyBase\Core\Controller\DataBaseController@first', 'https' => true]);
 $app->get('api/v1/db/last', ['uses'=>'HoneyBase\Core\Controller\DataBaseController@last', 'https' => true]);
 $app->get('api/v1/email_verify', ['uses'=>'HoneyBase\Core\Controller\AccountController@email_verify']);
+$app->get('api/v1/logger/{type}', 'HoneyBase\Core\Controller\UtilityController@logger');

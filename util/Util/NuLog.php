@@ -3,25 +3,27 @@
 use Log;
 
 class NuLog{
-  public static function info($x, $file=null, $line=null){
-    self::text('info', $x, $file, $line);
+  public static function info($x, $file="*", $line="*", $in_detail=false){
+    self::text('info', json_encode($x), $file, $line, $in_detail);
   }
-  public static function warn($x, $file=null, $line=null){
-    self::text('warn', $x, $file, $line);
+  public static function warn($x, $file="*", $line="*", $in_detail=false){
+    self::text('warn', json_encode($x), $file, $line, $in_detail);
   }
-  public static function error($x, $file=null, $line=null){
-    self::text('error', $x, $file, $line);
+  public static function error($x, $file="*", $line="*", $in_detail=false){
+    self::text('error', json_encode($x), $file, $line, $in_detail);
   }
 
-  private static function text ($type, $x, $file, $line){
+  private static function text ($type, $x, $file, $line, $in_detail){
     $class = 'Log';
-    if($file == null || $line == null){
-      $class::$type($x);
-    } else {
-      $class::$type("\n[PLACE] - ".$file.":".$line."\n".
-      "[VAL] - ".json_encode($x)."\n".
-      self::drip($file, $line)."\n");
+    $str = "\n[TYPE] - ".strtoupper($type)."\n".
+    "[PLACE] - ".$file.":".$line."\n".
+    "[VAL] - ".json_encode($x)."\n";
+
+    if($in_detail){
+      $str += self::drip($file, $line)."\n";
     }
+
+    $class::$type($str);
   }
 
   private static function drip ($path, $l) {
