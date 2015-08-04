@@ -23,13 +23,14 @@ class DataBaseController extends Controller {
     }
 
     $session_id = $request->cookie(SERVICE_NAME.'id');
+    $current_user = User::current_user($session_id);
     $headers = ['Access-Control-Allow-Origin' => ORIGIN, "Set-Cookie"=>SERVICE_NAME."id"."=".$session_id."; path=/", "Access-Control-Allow-Credentials"=>"true"];
     $db = new MysqlAdaptor();
 
     $result = false;
 
     if($tbl == "" || $value == null){
-      NuLog::error("push input invalid", __FILE__, __LINE__);
+      NuLog::error(["context"=>"push input invalid", "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
       $res = ["flag"=>false, "data"=>null];
       return response($res, 200, $headers);
     } else {
@@ -49,12 +50,13 @@ class DataBaseController extends Controller {
     $value = $request->value;
 
     $session_id = $request->cookie(SERVICE_NAME.'id');
+    $current_user = User::current_user($session_id);
     $headers = ['Access-Control-Allow-Origin' => ORIGIN, "Set-Cookie"=>SERVICE_NAME."id"."=".$session_id."; path=/", "Access-Control-Allow-Credentials"=>"true"];
     $db = new MysqlAdaptor();
     $flag = false;
 
     if($tbl == "" || $id < 0){
-      NuLog::error("set input invalid", __FILE__, __LINE__);
+      NuLog::error(["context"=>"set input invalid", "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
     } else {
       $result = $db->update($tbl, $id, $value);
       $flag = $result["flag"];
@@ -71,12 +73,13 @@ class DataBaseController extends Controller {
     $id = $data['id'];
 
     $session_id = $request->cookie(SERVICE_NAME.'id');
+    $current_user = User::current_user($session_id);
     $headers = ['Access-Control-Allow-Origin' => ORIGIN, "Set-Cookie"=>SERVICE_NAME."id"."=".$session_id."; path=/", "Access-Control-Allow-Credentials"=>"true"];
     $db = new MysqlAdaptor();
     $result = false;
 
     if($tbl == "" || $id < 0){
-      NuLog::error("remove input invalid", __FILE__, __LINE__);
+      NuLog::error(["context"=>"remove input invalid", "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
     } else {
       $result = $db->delete($tbl, $id)["flag"];
     }
@@ -94,12 +97,13 @@ class DataBaseController extends Controller {
     }
 
     $session_id = $request->cookie(SERVICE_NAME.'id');
+    $current_user = User::current_user($session_id);
     $headers = ['Access-Control-Allow-Origin' => ORIGIN, "Set-Cookie"=>SERVICE_NAME."id"."=".$session_id."; path=/", "Access-Control-Allow-Credentials"=>"true"];
     $db = new MysqlAdaptor();
     $result = false;
 
     if($tbl == "" || $value == null){
-      NuLog::error("select input invalid", __FILE__, __LINE__);
+      NuLog::error(["context"=>"select input invalid", "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
     } else {
       $result = $db->select($tbl, $value);
     }
@@ -116,6 +120,7 @@ class DataBaseController extends Controller {
     $value = $request->value;
 
     $session_id = $request->cookie(SERVICE_NAME.'id');
+    $current_user = User::current_user($session_id);
     $headers = ['Access-Control-Allow-Origin' => ORIGIN, "Set-Cookie"=>SERVICE_NAME."id"."=".$session_id."; path=/", "Access-Control-Allow-Credentials"=>"true"];
     $result = false;
 
@@ -131,6 +136,7 @@ class DataBaseController extends Controller {
     $data = $request->all();
     $tbl = $data["table"];
     $session_id = $request->cookie(SERVICE_NAME.'id');
+    $current_user = User::current_user($session_id);
     $headers = ['Access-Control-Allow-Origin' => ORIGIN, "Access-Control-Allow-Credentials"=>"true"];
     $db = new MysqlAdaptor();
     $result = false;
@@ -146,7 +152,7 @@ class DataBaseController extends Controller {
     }
 
     if($tbl == "" ){//|| $value == null){
-      NuLog::error("select input invalid", __FILE__, __LINE__);
+      NuLog::error(["context"=>"select input invalid", "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
     } else if(count($_query) == 0) {
       $result = $db->count($tbl, []);
     } else {
@@ -160,12 +166,13 @@ class DataBaseController extends Controller {
     $data = $request->all();
     $tbl = $data["table"];
     $session_id = $request->cookie(SERVICE_NAME.'id');
+    $current_user = User::current_user($session_id);
     $headers = ['Access-Control-Allow-Origin' => ORIGIN, "Set-Cookie"=>SERVICE_NAME."id"."=".$session_id."; path=/", "Access-Control-Allow-Credentials"=>"true"];
     $db = new MysqlAdaptor();
     $result = false;
 
     if($tbl == "" ){//|| $value == null){
-      NuLog::error("select input invalid", __FILE__, __LINE__);
+      NuLog::error(["context"=>"select input invalid", "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
     } else {
       $result = $db->first($tbl, []);
     }
@@ -176,12 +183,13 @@ class DataBaseController extends Controller {
     $data = $request->all();
     $tbl = $data["table"];
     $session_id = $request->cookie(SERVICE_NAME.'id');
+    $current_user = User::current_user($session_id);
     $headers = ['Access-Control-Allow-Origin' => ORIGIN, "Set-Cookie"=>SERVICE_NAME."id"."=".$session_id."; path=/", "Access-Control-Allow-Credentials"=>"true"];
     $db = new MysqlAdaptor();
     $result = false;
 
     if($tbl == "" ){//|| $value == null){
-      NuLog::error("select input invalid", __FILE__, __LINE__);
+      NuLog::error(["context"=>"select input invalid", "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
     } else {
       $result = $db->last($tbl, []);
     }

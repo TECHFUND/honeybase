@@ -68,7 +68,7 @@ class AccessorParser {
         $this->value = null;
       }
     } catch (Exception $e) {
-      NuLog::error($e->getMessage(), __FILE__, __LINE__);
+      NuLog::error(["context"=>$e->getMessage(), "user_id"=>(isset($this->current_user)) ? $this->current_user['id'] : -1], __FILE__, __LINE__);
     }
   }
 
@@ -84,7 +84,9 @@ class AccessorParser {
       $this->request->current_user = $current_user;
     }
     $this->current_user = $current_user;
-    return $current_user;
+  }
+  public function getCurrentUser(){
+    return $this->current_user;
   }
 
   public function setAccessor($rel_path){
@@ -99,7 +101,7 @@ class AccessorParser {
         return $this->accessor;
       }
     } catch (Exception $e) {
-      NuLog::error($e->getMessage(), __FILE__, __LINE__);
+      NuLog::error(["context"=>$e->getMessage(), "user_id"=>(isset($this->current_user)) ? $this->current_user['id'] : -1], __FILE__, __LINE__);
     }
   }
 
@@ -203,7 +205,7 @@ class AccessorParser {
         }
       }
     } catch (Exception $e) {
-      NuLog::error($e->getMessage(), __FILE__, __LINE__);
+      NuLog::error(["context"=>$e->getMessage(), "user_id"=>(isset($this->current_user)) ? $this->current_user['id'] : -1], __FILE__, __LINE__);
     }
   }
 
@@ -219,7 +221,7 @@ class AccessorParser {
         return false;
       }
     } catch (Exception $e) {
-      NuLog::error($e->getMessage(), __FILE__, __LINE__);
+      NuLog::error(["context"=>$e->getMessage(), "user_id"=>(isset($this->current_user)) ? $this->current_user['id'] : -1], __FILE__, __LINE__);
     }
   }
 
@@ -250,7 +252,7 @@ class AccessorParser {
         throw new Exception("honeybase definition only, but not matched");
       }
     } catch (Exception $e) {
-      NuLog::error($e->getMessage(), __FILE__, __LINE__);
+      NuLog::error(["context"=>$e->getMessage(), "user_id"=>(isset($this->current_user)) ? $this->current_user['id'] : -1], __FILE__, __LINE__);
     }
   }
 
@@ -340,7 +342,7 @@ class AccessorParser {
       }
       $this->request->value = $this->value;// 上書き値を適用
     } catch (Exception $e) {
-      NuLog::error($e->getMessage(), __FILE__, __LINE__);
+      NuLog::error(["context"=>$e->getMessage(), "user_id"=>(isset($this->current_user)) ? $this->current_user['id'] : -1], __FILE__, __LINE__);
     }
   }
 
@@ -355,7 +357,7 @@ class AccessorParser {
         }
       }
     } catch (Exception $e) {
-      NuLog::error($e->getMessage(), __FILE__, __LINE__);
+      NuLog::error(["context"=>$e->getMessage(), "user_id"=>(isset($this->current_user)) ? $this->current_user['id'] : -1], __FILE__, __LINE__);
     }
   }
 
@@ -380,7 +382,7 @@ class AccessorParser {
         throw new Exception("required login but not logged in");
       }
     } catch (Exception $e) {
-      NuLog::error($e->getMessage(), __FILE__, __LINE__);
+      NuLog::error(["context"=>$e->getMessage(), "user_id"=>(isset($this->current_user)) ? $this->current_user['id'] : -1], __FILE__, __LINE__);
     }
   }
 
@@ -410,7 +412,7 @@ class AccessorParser {
         }
       }
     } catch (Exception $e) {
-      NuLog::error($e->getMessage(), __FILE__, __LINE__);
+      NuLog::error(["context"=>$e->getMessage(), "user_id"=>(isset($this->current_user)) ? $this->current_user['id'] : -1], __FILE__, __LINE__);
     }
   }
 
@@ -428,7 +430,7 @@ class AccessorParser {
         throw new Exception("none role or something wrong");
       }
     } catch (Exception $e) {
-      NuLog::error($e->getMessage(), __FILE__, __LINE__);
+      NuLog::error(["context"=>$e->getMessage(), "user_id"=>(isset($this->current_user)) ? $this->current_user['id'] : -1], __FILE__, __LINE__);
     }
   }
 

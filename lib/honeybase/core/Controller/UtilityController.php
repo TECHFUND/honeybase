@@ -14,35 +14,25 @@ class UtilityController extends Controller {
   {
     $session_id = $request->cookie(SERVICE_NAME.'id');
     $current_user = User::current_user($session_id);
-    $user_id = (array_key_exists("id", $current_user)) ? $current_user['id'] : "anonymous";
+    $user_id = (isset($current_user)) ? (int)$current_user['id'] : -1;
 
     $data = $request->all();
     $context = ( array_key_exists("context", $data) ) ? $data["context"] : "";
     $path = ( array_key_exists("path", $data) ) ? $data["path"] : "*";
-    $msg = ( array_key_exists("msg", $data) ) ? $data["msg"] : "";
-    $file = ( array_key_exists("file", $data) ) ? $data["file"] : "*";
-    $line = ( array_key_exists("line", $data) ) ? $data["line"] : "*";
-    $action = ( array_key_exists("action", $data) ) ? $data["action"] : "*";
-    $selector = ( array_key_exists("selector", $data) ) ? $data["selector"] : "*";
-    $val = ( array_key_exists("val", $data) ) ? $data["val"] : "";
 
-    $str = '{
-      "context": '.$context.',
-      "path": '.$path.',
-      "msg": '.$msg.',
-      "action": '.$action.',
-      "selector": '.$selector.',
-      "val": '.$val.',
-      "user_id": '.$user_id.'
-    }';
+    $input = [
+      "context"=>$context,
+      "path"=>$path,
+      "user_id"=>$user_id
+    ];
 
     $code = 503;
     if ( in_array($type, ["info", "error", "warn"], true) ){
-      NuLog::$type($str, $file, $line);
+      NuLog::$type($input, $path, "frontend");
       $res = ["flag"=>true];
       $code = 200;
     } else {
-      NuLog::error("There may be TYPO in the ajax path of /api/v1/logger/{type}.", __FILE__, __LINE__);
+      NuLog::error(["context"=>"There may be TYPO in the ajax path of /api/v1/logger/{type}.", "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
       $code = 404;
       $res = ["flag"=>false];
     }

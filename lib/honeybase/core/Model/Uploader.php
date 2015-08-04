@@ -17,11 +17,11 @@ class Uploader {
       if($isRenamed){
         return $_path;
       } else {
-        NuLog::error("image rename error",__FILE__,__LINE__);
+        NuLog::error(["context"=>"image rename error", "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
         return null;
       }
     } else {
-      NuLog::error("image write error",__FILE__,__LINE__);
+      NuLog::error(["context"=>"image write error", "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
       return null;
     }
   }

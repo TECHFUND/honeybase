@@ -230,14 +230,20 @@ class AccountController extends Controller {
   private function createOrUpdateSession($user){
     /* 既存・新規作成ユーザーIDをランダム文字列と紐づける */
     $db = new MysqlAdaptor();
-    if(is_array($user)){
-      $res = $db->select("sessions", ["user_id"=>$user["id"]]);
-      $old_sessions = $res['data'];
-      $isAlreadyExist = (count($old_sessions) > 0);
-      return ($isAlreadyExist) ? Session::update($user, $old_sessions[0]) : Session::create($user);
+    $session_id = "";
+    if( isset($user) || is_array($user) ){
+      try {
+        $res = $db->select("sessions", ["user_id"=>$user["id"]]);
+        $old_sessions = $res['data'];
+        $isAlreadyExist = (count($old_sessions) > 0);
+        $session_id = ($isAlreadyExist) ? Session::update($user, $old_sessions[0]) : Session::create($user);
+      } catch (Exception $e) {
+        NuLog::error(["context"=>$e->getMessage(), "user_id"=>(isset($user)) ? $user['id'] : -1], __FILE__, __LINE__);
+      }
     } else {
-      NuLog::error("null arg in createOrUpdateSession", __FILE__, __LINE__);
+      NuLog::error(["context"=>'A variable $user is confirmed as undefined, null, or not array.', "user_id"=>(isset($user)) ? $user['id'] : -1], __FILE__, __LINE__);
     }
+    return $session_id;
   }
 
 }

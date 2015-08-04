@@ -41,12 +41,11 @@ class Mail {
     $mail_body = $cf->mailStrReplace($replace_str_arr, VERIFY_BODY);
 
     $res = mb_send_mail($email, $_mail->verify_for_signup->title, $mail_body, MAIL_HEADERS); // このURLを押してアクティブ！
-    NuLog::info($email);
-    NuLog::info($_mail->verify_for_signup->title);
+    NuLog::info(["context"=>$email, "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], $file, $line);
     if($res){
-      NuLog::info('mail success');
+      NuLog::info(["context"=>'mail success', "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], $file, $line);
     } else {
-      NuLog::info('mail failed');
+      NuLog::error(["context"=>'mail failed', "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], $file, $line);
     }
     mb_internal_encoding(ORG);// エンコーディングを戻す
     return $res;

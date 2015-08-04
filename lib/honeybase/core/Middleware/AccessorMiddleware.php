@@ -22,6 +22,7 @@ class AccessorMiddleware {
     $parser->setTableName();
     $parser->setPostedValue(); // value check
     $parser->setCurrentUser(); // current_user
+    $current_user = $parser->getCurrentUser();
 
     $accessor = $parser->getAccessor(); // accessorをpath->table->role&paramsと走査する
 
@@ -32,7 +33,7 @@ class AccessorMiddleware {
       return $next($request);
     } else {
       $msg = "All access denying now.";
-      NuLog::error($msg, __FILE__, __LINE__);
+      NuLog::error(["context"=>$msg, "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
       return response(['flag'=>false, "error_message"=>$msg], 503, $header);
     }
 
@@ -67,27 +68,27 @@ class AccessorMiddleware {
               return $next($request);
             } else {
               $msg = "Bad role.";
-              NuLog::error($msg, __FILE__, __LINE__);
+              NuLog::error(["context"=>$msg, "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
               return response(['flag'=>false, "error_message"=>$msg], 503, $header);
             }
           } else {
             $msg = "No role or params in action definition.";
-            NuLog::error($msg, __FILE__, __LINE__);
+            NuLog::error(["context"=>$msg, "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
             return response(['flag'=>false, "error_message"=>$msg], 503, $header);
           }
         } else {
           $msg = "No action in table definition.";
-          NuLog::error($msg, __FILE__, __LINE__);
+          NuLog::error(["context"=>$msg, "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
           return response(['flag'=>false, "error_message"=>$msg], 503, $header);
         }
       } else {
         $msg = "No table in path definition.";
-        NuLog::error($msg, __FILE__, __LINE__);
+        NuLog::error(["context"=>$msg, "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
         return response(['flag'=>false, "error_message"=>$msg], 503, $header);
       }
     } else {
       $msg = "No path in accessor definition.";
-      NuLog::error($msg, __FILE__, __LINE__);
+      NuLog::error(["context"=>$msg, "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
       return response(['flag'=>false, "error_message"=>$msg], 503, $header);
     }
   }

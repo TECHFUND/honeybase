@@ -18,13 +18,13 @@ class MysqlAdaptor {
     /* 引数が無いと 'Whoops, looks like something went wrong.' になる */
 		// dbaccess
     if(DB_HOST=="") {
-      NuLog::error("no database host", __FILE__, __LINE__);
+      NuLog::error(["context"=>"no database host", "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
     } elseif (DB_USERNAME=="") {
-      NuLog::error("no database username", __FILE__, __LINE__);
+      NuLog::error(["context"=>"no database username", "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
     } elseif (DB_PASSWORD=="") {
-      NuLog::info("no database password", __FILE__, __LINE__);
+      NuLog::error(["context"=>"no database password", "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
     } elseif (DB_DATABASE=="") {
-      NuLog::error("no database name", __FILE__, __LINE__);
+      NuLog::error(["context"=>"no database name", "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
     }
 
     $database = new mysqli(DB_HOST, DB_USERNAME, DB_PASSWORD);
@@ -142,7 +142,7 @@ class MysqlAdaptor {
 				$rows[] = $row;
 			}
     } catch (Exception $e) {
-      NuLog::error($e->getMessage(), __FILE__, __LINE__);
+      NuLog::error(["context"=>$e->getMessage(), "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
     }
 		return $rows;
 	}
@@ -527,7 +527,7 @@ class MysqlAdaptor {
 
 		// tbl none
 		if (0 == $result->num_rows) {
-      NuLog::error("There is no table, cannot update target record", __FILE__, __LINE__);
+      NuLog::error(["context"=>"There is no table, cannot update target record", "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
 		}
 
 
@@ -602,7 +602,7 @@ class MysqlAdaptor {
 
 		// tbl none
 		if (0 == $result->num_rows) {
-      NuLog::error("There is no table, cannot remove target record", __FILE__, __LINE__);
+      NuLog::error(["context"=>"There is no table, cannot remove target record", "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
 		}
 
 
@@ -661,7 +661,7 @@ class MysqlAdaptor {
   function errorReport($sql, $file, $line){
     $msg = "[" . date("Y-m-d h:i:s") . "]Query failed by:" . $sql . "\n";
 		error_log($msg, 3, LOG_PATH);
-    NuLog::error($msg, $file, $line);
+    NuLog::error(["context"=>$msg, "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], $file, $line);
   }
 
 	function mysql_exploit($result){
