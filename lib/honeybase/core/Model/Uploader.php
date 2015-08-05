@@ -50,17 +50,17 @@ class Uploader {
     $firstline = $lines[0];
     mb_regex_encoding('ASCII');
     if (mb_eregi('<\\?php', $firstline)) {
+      NuLog::error(["context"=>'Attack detected', "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
       die('Attack detected');
-      NuLog::error('Attack detected');
     }
     mb_regex_encoding('ASCII');
     if (mb_eregi('^.*<\\?php.*$', $firstline)) {
+      NuLog::error(["context"=>'Attack detected', "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
       die('Attack detected');
-      NuLog::error('Attack detected');
     }
     if (preg_match('/<\\?php./i', $firstline)) {
+      NuLog::error(["context"=>'Attack detected', "user_id"=>(isset($current_user)) ? $current_user['id'] : -1], __FILE__, __LINE__);
       die('Attack detected');
-      NuLog::error('Attack detected');
     }
   }
 

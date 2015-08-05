@@ -292,7 +292,7 @@
         ajax.open("POST", self.path, true);
         ajax.onload = function(e) {
           var res = JSON.parse(ajax.response);
-          cb(res.flag, res.path);
+          cb(res.flag, "/assets/img/generated/"+res.path);
         };
         ajax.send(fd);
       }
