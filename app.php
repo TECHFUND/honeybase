@@ -98,5 +98,4 @@ require __DIR__.'/lib/honeybase/core/routes.php';
 
 // create db automatically
 $db = new HoneyBase\Core\Model\MysqlAdaptor();
-
 return $app;

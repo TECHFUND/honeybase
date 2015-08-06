@@ -7,22 +7,7 @@ class AccessorParserTest extends TestCase {
 
   // DI
   public function testSetAccessor(){
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // $accessor = Util::getJSON("accessor.json");
+    $accessor = Util::getJSON("accessor.json");
     $parser = new AccessorParser();
     $result = $parser->setAccessor($accessor);
     $this->assertTrue($result);
