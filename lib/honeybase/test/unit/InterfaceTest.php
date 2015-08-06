@@ -1,7 +1,5 @@
 <?php
 
-use App\Util\NuLog;
-
 class InterfaceTest extends TestCase {
 
   public function testCurrentUser() {

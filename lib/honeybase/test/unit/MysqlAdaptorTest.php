@@ -1,8 +1,7 @@
 <?php
 
-use App\Util\NuLog;
-use App\Util\Util;
-use App\Models\MysqlAdaptor;
+use Util\Util\Util;
+use HoneyBase\Core\Model\MysqlAdaptor;
 
 class MysqlAdaptorTest extends TestCase {
 
@@ -29,7 +28,6 @@ class MysqlAdaptorTest extends TestCase {
     $last_id = $select_result->fetch_all()[0][0];
 
     $db = new MysqlAdaptor();
-    //NuLog::info($len,__FILE__,__LINE__);
     $result = $db->update("articles", $last_id, ["title"=>Util::createRandomString(10), "description"=>Util::createRandomString(20), "user_id"=>1]);
     $this->assertEquals(true, $result['flag']);
   }

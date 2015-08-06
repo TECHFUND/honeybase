@@ -1,265 +1,41 @@
 {
-  "/" : {
-    "honeybase" : ["signup[type=(client|expert)]", "signin", "auth[provider=facebook,type=(client|expert)]", "logout", "current_user"],
-    "database" : {
-      "issues" : {
-        "insert" : {
-          "role" : "client",
-          "params" : ["title", "body", "category1", "category2", "user_id={current_user}", "created_at", "updated_at"]
-        }
-      },
-      "experts" : {
-        "insert" : {
-          "role" : "all",
-          "params" : ["user_id", "company=null", "position=null", "verify=false", "created_at", "updated_at"]
-        }
-      },
-      "notifications" : {
-        "select" : {
-          "role" : "login",
-          "params" : ["user_id", "read_flag=false"]
-        },
-        "update" : {
-          "role" : "owner",
-          "params" : ["read_flag=true", "updated_at"]
-        }
+  "honeybase" : {
+    "/" : {"provider":["facebook"],"role":["client","expert"]},
+    "/admin" : {"provider":["facebook"],"role":["admin"]}
+  },
+  "database" : {
+    "issues" : {
+      "insert" : {
+        "client" : ["title", "body", "category1", "category2", "user_id={current_user}", "created_at", "updated_at"]
       }
-    }
-  },
-  "/about" : {
-    "honeybase" : ["signup[type=(client|expert)]", "signin", "auth[provider=facebook,type=(client|expert)]", "logout", "current_user"],
-    "database" : {
-      "tbl" : {
-        "act" : {
-          "role" : "",
-          "params" : []
-        }
+    },
+    "experts" : {
+      "insert" : {
+        "all" : ["user_id", "company=null", "position=null", "verify=false", "created_at", "updated_at"]
+      }
+    },
+    "messages" : {
+      "insert" : {
+        "login" : ["body", "sender_id", "receiver_id", "issue_id", "deleted", "created_at", "updated_at"]
+      }
+    },
+    "notifications" : {
+      "insert" : {
+        "login" : ["user_id", "read_flag=false", "created_at", "updated_at"]
       },
-      "experts" : {
-        "insert" : {
-          "role" : "all",
-          "params" : ["user_id", "company=null", "position=null", "verify=false", "created_at", "updated_at"]
-        }
-      }
-    }
-  },
-  "/issues/*/discussion" : {
-    "honeybase" : ["signup[type=(client|expert)]", "signin", "auth[provider=facebook,type=(client|expert)]", "logout", "current_user"],
-    "database" : {
-      "messages" : {
-        "insert" : {
-          "role" : "login",
-          "params" : ["body", "sender_id", "receiver_id", "issue_id", "deleted", "created_at", "updated_at"]
-        }
+      "update" : {
+        "owner" : ["read_flag=true", "updated_at"]
       },
-      "issue_executors" : {
-        "insert" : {
-          "role" : "client",
-          "params" : ["issue_id", "executor_id", "created_at", "updated_at"]
-        }
+      "select" : {
+        "login" : ["user_id", "read_flag=false"]
+      }
+    },
+    "users" : {
+      "update" : {
+        "admin" : ["banned", "updated_at"]
       },
-      "notifications" : {
-        "insert" : {
-          "role" : "login",
-          "params" : ["user_id", "read_flag=false", "created_at", "updated_at"]
-        },
-        "select" : {
-          "role" : "login",
-          "params" : ["user_id", "read_flag=false"]
-        },
-        "update" : {
-          "role" : "owner",
-          "params" : ["read_flag=true", "updated_at"]
-        }
-      }
-    }
-  },
-  "/issues/*/to_offline" : {
-    "honeybase" : ["signup[type=(client|expert)]", "signin", "auth[provider=facebook,type=(client|expert)]", "logout", "current_user"],
-    "database" : {
-      "messages" : {
-        "insert" : {
-          "role" : "login",
-          "params" : ["body", "sender_id", "receiver_id", "issue_id", "deleted", "created_at", "updated_at"]
-        }
-      },
-      "issue_executors" : {
-        "delete" : {
-          "role" : "client",
-          "params" : ["id"]
-        }
-      }
-    }
-  },
-  "/expert/issues" : {
-    "honeybase" : ["signup[type=(client|expert)]", "signin", "auth[provider=facebook,type=(client|expert)]", "logout", "current_user"],
-    "database" : {
-      "issue_executors" : {
-        "delete" : {
-          "role" : "owner",
-          "params" : ["id"]
-        }
-      },
-      "issue_discussers" : {
-        "delete" : {
-          "role" : "owner",
-          "params" : ["id"]
-        }
-      }
-    }
-  },
-  "/expert/new" : {
-    "honeybase" : ["signup[type=(client|expert)]", "signin", "auth[provider=facebook,type=(client|expert)]", "logout", "current_user", "uploader"],
-    "database" : {
-      "users[user_id=id]" : {
-        "update" : {
-          "role" : "owner",
-          "params" : ["full_name", "description", "email", "picture", "updated_at"]
-        }
-      },
-      "experts" : {
-        "insert" : {
-          "role" : "expert",
-          "params" : ["company", "position", "verify=true", "user_id={current_user}", "created_at", "updated_at"]
-        },
-        "select" : {
-          "role" : "expert",
-          "params" : ["user_id={current_user}"]
-        },
-        "update" : {
-          "role" : "owner",
-          "params" : ["user_id", "company", "position", "verify", "created_at", "updated_at"]
-        }
-      }
-    }
-  },
-  "/client/issues" : {
-    "honeybase" : ["signup[type=(client|expert)]", "signin", "auth[provider=facebook,type=(client|expert)]", "logout", "current_user"],
-    "database" : {
-      "issue_discussers" : {
-        "insert" : {
-          "role" : "client",
-          "params" : ["issue_id", "discusser_id", "created_at", "updated_at"]
-        }
-      }
-    }
-  },
-  "/client/issues/*" : {
-    "honeybase" : ["signup[type=(client|expert)]", "signin", "auth[provider=facebook,type=(client|expert)]", "logout", "current_user"],
-    "database" : {
-      "issue_discussers" : {
-        "insert" : {
-          "role" : "owner",
-          "params" : ["issue_id", "discusser_id", "created_at", "updated_at"]
-        }
-      },
-      "notifications" : {
-        "insert" : {
-          "role" : "login",
-          "params" : ["user_id", "read_flag=false", "created_at", "updated_at"]
-        },
-        "select" : {
-          "role" : "login",
-          "params" : ["user_id", "read_flag=false"]
-        },
-        "update" : {
-          "role" : "owner",
-          "params" : ["read_flag=true", "updated_at"]
-        }
-      }
-
-    }
-  },
-  "/client/issues/new" : {
-    "honeybase" : ["signup[type=(client|expert)]", "signin", "auth[provider=facebook,type=(client|expert)]", "logout", "current_user"],
-    "database" : {
-      "issues" : {
-        "insert" : {
-          "role" : "client",
-          "params" : ["title", "body", "category1", "category2", "user_id={current_user}", "created_at", "updated_at"]
-        }
-      }
-    }
-  },
-  "/admin" : {
-    "honeybase" : ["signup[type=(client|expert)]", "signin", "auth[provider=facebook,type=(client|expert)]", "logout", "current_user"]
-  },
-  "/admin/login" : {
-    "honeybase" : ["signup[type=admin]", "signin", "auth[provider=facebook,type=admin]", "logout", "current_user"],
-    "database" : {
-      "experts" : {
-        "insert" : {
-          "role" : "all",
-          "params" : ["user_id", "created_at", "updated_at"]
-        }
-      }
-    }
-  },
-  "/admin/issues/*" : {
-    "honeybase" : ["signup[type=(client|expert)]", "signin", "auth[provider=facebook,type=(client|expert)]", "logout", "current_user"],
-    "database" : {
-      "issue_experts" : {
-        "insert" : {
-          "role" : "admin",
-          "params" : ["issue_id", "expert_id", "created_at", "updated_at"]
-        },
-        "select" : {
-          "role" : "admin",
-          "params" : ["issue_id", "expert_id", "created_at", "updated_at"]
-        },
-        "delete" : {
-          "role" : "admin",
-          "params" : ["id"]
-        }
-      },
-      "issues" : {
-        "select" : {
-          "role" : "admin",
-          "params" : ["id"]
-        }
-      },
-      "notifications" : {
-        "insert" : {
-          "role" : "login",
-          "params" : ["user_id", "read_flag=false", "created_at", "updated_at"]
-        },
-        "select" : {
-          "role" : "login",
-          "params" : ["user_id", "read_flag=false"]
-        },
-        "update" : {
-          "role" : "owner",
-          "params" : ["read_flag=true", "updated_at"]
-        }
-      }
-
-    }
-  },
-  "/admin/issues/*/discussion" : {
-    "honeybase" : ["signup[type=(client|expert)]", "signin", "auth[provider=facebook,type=(client|expert)]", "logout", "current_user"],
-    "database" : {
-      "messages" : {
-        "update" : {
-          "role" : "admin",
-          "params" : ["delete", "updated_at"]
-        }
-      },
-      "users" : {
-        "update" : {
-          "role" : "admin",
-          "params" : ["banned", "updated_at"]
-        }
-      }
-    }
-  },
-  "/admin/analytics" : {
-    "honeybase" : ["signup[type=(client|expert)]", "signin", "auth[provider=facebook,type=(client|expert)]", "logout", "current_user"],
-    "database" : {
-      "users" : {
-        "insert" : {
-          "role" : "admin",
-          "params" : ["full_name", "description", "email", "picture", "type", "banned", "social_id", "facebook_link", "user_access_token", "created_at", "updated_at", "encrypted_password", "salt", "email_verify", "email_verify_code"]
-        }
+      "insert" : {
+        "admin" : ["full_name", "description", "email", "picture", "type", "banned", "social_id", "facebook_link", "user_access_token", "created_at", "updated_at", "encrypted_password", "salt", "email_verify", "email_verify_code"]
       }
     }
   }

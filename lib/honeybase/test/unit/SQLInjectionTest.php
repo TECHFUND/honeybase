@@ -1,8 +1,7 @@
 <?php
 
-use App\Util\NuLog;
-use App\Util\Util;
-use App\Models\MysqlAdaptor;
+use Util\Util\Util;
+use HoneyBase\Core\Model\MysqlAdaptor;
 
 class SQLInjectionTest extends TestCase {
 
