@@ -28,9 +28,11 @@ class AccessorParserTest extends TestCase {
   */
   // Existance of "table input" effect to "register" or "database"
   public function testIsDatabase(){
+    $request = $this->request();
     $parser = $this->parser();
-    $result = $parser->isDatabase("issues");
-    $this->assertTrue($result);
+    var_dump($request);
+    $result = $parser->isDatabase($request->input(null));
+    $this->assertEquals(false, $result);
   } // str->bool
 
   // Set keys to matcher
@@ -39,6 +41,8 @@ class AccessorParserTest extends TestCase {
     $parser = $this->parser();
     $result = $parser->climbTableBranch("issues");
     $this->assertTrue($result);
+    $this->assertTrue(isset($parser->table));
+    $this->assertEquals("object", gettype($parser->table));
   } // str->bool
   public function testClimbActionBranch(){
     $parser = $this->parser();
@@ -83,4 +87,16 @@ class AccessorParserTest extends TestCase {
     $result = $parser->matchProviderToAccessor("facebook");
     $this->assertTrue($result);
   } // str->bool
+
+
+  private function request(){
+    $input = function ($name){
+      if( isset($name) ) {
+        return (object)[];
+      } else {
+        return null;
+      }
+    };
+    return (object)["input" => $input];
+  }
 }
