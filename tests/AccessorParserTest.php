@@ -19,6 +19,8 @@ class AccessorParserTest extends TestCase {
     $this->assertTrue($result);
     $this->assertTrue(isset($parser->accessor));
     $this->assertEquals("object", gettype($parser->accessor));
+    $this->assertTrue(isset($parser->accessor->database));
+    $this->assertTrue(isset($parser->accessor->register));
   } // str->bool
 
 
@@ -38,6 +40,7 @@ class AccessorParserTest extends TestCase {
     $this->assertTrue($result);
     $this->assertTrue(isset($parser->table));
     $this->assertEquals("object", gettype($parser->table));
+    $this->assertTrue( count((array)$parser->table) > 0 );
   } // str->bool
   public function testClimbActionBranch(){
     // ready
@@ -51,6 +54,7 @@ class AccessorParserTest extends TestCase {
     $this->assertTrue($result);
     $this->assertTrue(isset($parser->action));
     $this->assertEquals("object", gettype($parser->action));
+    $this->assertTrue( count((array)$parser->action) > 0 );
   } // str->bool
   public function testClimbRoleBranch(){ // And get params
     // ready
@@ -65,6 +69,7 @@ class AccessorParserTest extends TestCase {
     $this->assertTrue($result);
     $this->assertTrue(isset($parser->params));
     $this->assertEquals("array", gettype($parser->params));
+    $this->assertTrue( count($parser->params) > 0 );
   } // str->bool // current_userのrole
 
   // Set matcher
@@ -100,8 +105,11 @@ class AccessorParserTest extends TestCase {
     $this->assertTrue($result);
     $this->assertTrue(isset($parser->provider));
     $this->assertEquals("array", gettype($parser->provider));
+    $this->assertTrue( count((array)$parser->provider) > 0 );
+
     $this->assertTrue(isset($parser->role));
     $this->assertEquals("array", gettype($parser->role));
+    $this->assertTrue( count((array)$parser->role) > 0 );
   } // str->bool
 
 
