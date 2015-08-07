@@ -17,26 +17,34 @@ class AccessorParser {
   }
 
   public function isDatabase(){
+    return true;
   }
 
   public function climbTableBranch(){
+    return true;
   }
 
   public function climbActionBranch(){
+    return true;
   }
 
   public function climbRoleBranch(){
+    return true;
   }
 
   public function matchParamsToAccessor(){
+    return true;
   }
 
   public function climbPathBranch(){
+    return true;
   }
 
   public function matchRoleToAccessor(){
+    return true;
   }
 
   public function matchProviderToAccessor(){
+    return true;
   }
 }
