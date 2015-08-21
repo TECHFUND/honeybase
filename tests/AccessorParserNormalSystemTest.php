@@ -4,12 +4,12 @@ use Util\Util\Util;
 use Util\Util\NuLog;
 use HoneyBase\Core\Middleware\AccessorParser;
 
-class AccessorParserTest extends TestCase {
+class AccessorParserNormalSystemTest extends TestCase {
 
   // DI
   public function testSetAccessor(){
     // ready
-    $accessor = Util::getJSON(__DIR__."/accessor.json");
+    $accessor = Util::getJSON(__DIR__."/accessor_normal.json");
     $parser = new AccessorParser();
 
     // eval
@@ -34,7 +34,7 @@ class AccessorParserTest extends TestCase {
     $parser = $this->parser();
 
     // eval
-    $result = $parser->climbTableBranch("issues");
+    $result = $parser->climbTableBranch("users");
 
     // assert
     $this->assertTrue($result);
@@ -45,7 +45,7 @@ class AccessorParserTest extends TestCase {
   public function testClimbActionBranch(){
     // ready
     $parser = $this->parser();
-    $result = $parser->climbTableBranch("issues");
+    $result = $parser->climbTableBranch("users");
 
     // eval
     $result = $parser->climbActionBranch("insert");
@@ -59,7 +59,7 @@ class AccessorParserTest extends TestCase {
   public function testClimbRoleBranch(){ // And get params
     // ready
     $parser = $this->parser();
-    $result = $parser->climbTableBranch("issues");
+    $result = $parser->climbTableBranch("users");
     $result = $parser->climbActionBranch("insert");
 
     // eval
@@ -77,7 +77,7 @@ class AccessorParserTest extends TestCase {
   public function testMatchParamsToAccessor(){
     // ready
     $parser = $this->parser();
-    $result = $parser->climbTableBranch("issues");
+    $result = $parser->climbTableBranch("users");
     $result = $parser->climbActionBranch("insert");
     $result = $parser->climbRoleBranch("client");
 
@@ -143,7 +143,7 @@ class AccessorParserTest extends TestCase {
 
   // before
   private function parser(){
-    $accessor = Util::getJSON(__DIR__."/accessor.json");
+    $accessor = Util::getJSON(__DIR__."/accessor_normal.json");
     $parser = new AccessorParser();
     $result = $parser->setAccessor($accessor);
     return $parser;

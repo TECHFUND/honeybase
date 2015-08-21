@@ -1,0 +1,19 @@
+{
+  "register" : {
+    "/" : { "provider" : ["facebook"], "role" : ["client", "expert"] },
+    "/admin" : { "provider" : ["facebook"], "role" : ["admin"] }
+  },
+
+  "database" : {
+    "animals" : {
+      "insert" : {
+        "client" : ["name", "weignt", "created_at", "updated_at"]
+      }
+    },
+    "girls" : {
+      "select" : {
+        "all" : ["name", "age", "email", "created_at", "updated_at"]
+      }
+    }
+  }
+}

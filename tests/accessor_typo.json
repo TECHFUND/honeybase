@@ -5,7 +5,7 @@
   },
 
   "database" : {
-    "issues" : {
+    "users" : {
       "insert" : {
         "client" : ["title", "body", "category1", "category2", "user_id={current_user}", "created_at", "updated_at"]
       },
@@ -14,12 +14,12 @@
         "admin" : ["title", "body", "category1", "category2", "user_id={current_user}", "created_at", "updated_at"]
       }
     },
-    "experts" : {
-      "insert" : {
+    "articles" : {
+      "select" : {
         "all" : ["user_id", "company=null", "position=null", "verify=false", "created_at", "updated_at"]
       },
-      "update" : {
-        "all" : ["user_id", "updated_at"]
+      "delete" : {
+        "all" : ["user_id", "company=null", "position=null", "verify=false", "created_at", "updated_at"]
       }
     }
   }

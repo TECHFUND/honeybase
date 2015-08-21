@@ -4779,3 +4779,773 @@ Stack trace:
 [PLACE] - /Users/sgtn/_dev/2015/honeybase/tests/AccessorParserTest.php:19
 [VAL] - "{\"context\":{\"accessor\":{\"register\":{\"\\\/\":{\"provider\":[\"facebook\"],\"role\":[\"client\",\"expert\"]},\"\\\/admin\":{\"provider\":[\"facebook\"],\"role\":[\"admin\"]}},\"database\":{\"issues\":{\"insert\":{\"client\":[\"title\",\"body\",\"category1\",\"category2\",\"user_id={current_user}\",\"created_at\",\"updated_at\"]},\"update\":{\"client\":[\"title\",\"body\",\"category1\",\"category2\",\"user_id={current_user}\",\"created_at\",\"updated_at\"],\"admin\":[\"title\",\"body\",\"category1\",\"category2\",\"user_id={current_user}\",\"created_at\",\"updated_at\"]}},\"experts\":{\"insert\":{\"all\":[\"user_id\",\"company=null\",\"position=null\",\"verify=false\",\"created_at\",\"updated_at\"]}}}}}}"
   
+[2015-08-09 23:35:06] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:39
+[VAL] - "{\"context\":\"Undefined property: stdClass::$delete\",\"user_id\":-1}"
+  
+[2015-08-21 14:17:29] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:17:29] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:17:29] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:17:29] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:17:29] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:17:29] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:17:29] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:17:29] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:17:29] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:24:34] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:24:34] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:24:34] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:24:34] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:24:34] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:24:34] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:24:34] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:24:34] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:24:34] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:24:46] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:24:46] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:24:46] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:24:46] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:24:46] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:24:46] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:24:46] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:24:46] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:24:46] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:25:38] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:25:38] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:25:38] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:25:38] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:25:38] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:25:38] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:25:38] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:25:38] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:25:38] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:25:56] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:25:56] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:25:56] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:25:56] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:25:56] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:25:56] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:25:56] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:25:56] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:25:56] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:30:29] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:30:29] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:30:29] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:30:29] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:30:29] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:30:29] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:30:29] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:30:29] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:30:29] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:30:42] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:30:42] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:30:42] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:30:42] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:30:42] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:30:42] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:30:42] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:30:42] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:30:42] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:54:57] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:54:57] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:54:57] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:54:57] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:54:57] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:54:57] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:54:57] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:54:57] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:54:57] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:55:24] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:55:24] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:55:24] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:55:24] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:55:24] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:55:24] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:55:24] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:55:24] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:55:24] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:56:02] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:56:02] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:56:02] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:56:02] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:56:02] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:56:02] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:56:02] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:56:02] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:56:02] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:56:54] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:56:54] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:56:54] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:56:54] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:56:54] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:56:54] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:56:54] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:56:54] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:56:54] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:57:27] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:57:27] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:57:27] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:57:27] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:57:27] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:57:27] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:57:27] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:57:27] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:57:27] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:57:37] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:57:37] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:57:37] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:57:37] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:57:37] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:57:37] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:57:37] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:57:37] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:57:37] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:58:45] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:58:45] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:58:45] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:58:45] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:58:45] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:58:45] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:58:45] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 14:58:45] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 14:58:45] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 15:00:41] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 15:00:41] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 15:00:41] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 15:00:41] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 15:00:41] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 15:00:41] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 15:00:41] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 15:00:41] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 15:00:41] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 15:01:03] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 15:01:03] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 15:01:03] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 15:01:03] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 15:01:03] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 15:01:03] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 15:01:03] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 15:01:03] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 15:01:03] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 15:03:09] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 15:03:09] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 15:03:09] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 15:03:09] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 15:03:09] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 15:03:09] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 15:03:09] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:40
+[VAL] - "{\"context\":\"Undefined property: stdClass::$users\",\"user_id\":-1}"
+  
+[2015-08-21 15:03:09] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:51
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
+[2015-08-21 15:03:09] lumen.ERROR: 
+[TYPE] - ERROR
+[PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
+[VAL] - "{\"context\":\"Trying to get property of non-object\",\"user_id\":-1}"
+  
