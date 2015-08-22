@@ -37,7 +37,7 @@ class AccessorParser {
       $this->table = $database->$table_name;
       $bool = isset($this->table);
     } catch (Exception $e) {
-      NuLog::error(["context"=>$e->getMessage(), "user_id"=>(isset($this->current_user)) ? $this->current_user['id'] : -1], __FILE__, __LINE__);
+      NuLog::error(["context"=>$e->getMessage().". Key:".$table_name, "user_id"=>(isset($this->current_user)) ? $this->current_user['id'] : -1], __FILE__, __LINE__);
     }
     return $bool;
   }
@@ -48,7 +48,7 @@ class AccessorParser {
       $this->action = $this->table->$action_name;
       $bool = isset($this->action);
     } catch (Exception $e) {
-      NuLog::error(["context"=>$e->getMessage(), "user_id"=>(isset($this->current_user)) ? $this->current_user['id'] : -1], __FILE__, __LINE__);
+      NuLog::error(["context"=>$e->getMessage().". Key:".$action_name, "user_id"=>(isset($this->current_user)) ? $this->current_user['id'] : -1], __FILE__, __LINE__);
     }
     return $bool;
   }
@@ -59,7 +59,7 @@ class AccessorParser {
       $this->params = $this->action->$role_name;
       $bool = isset($this->params);
     } catch (Exception $e) {
-      NuLog::error(["context"=>$e->getMessage(), "user_id"=>(isset($this->current_user)) ? $this->current_user['id'] : -1], __FILE__, __LINE__);
+      NuLog::error(["context"=>$e->getMessage().". Key:".$role_name, "user_id"=>(isset($this->current_user)) ? $this->current_user['id'] : -1], __FILE__, __LINE__);
     }
     return $bool;
   }
@@ -78,7 +78,7 @@ class AccessorParser {
       $this->role = $path_obj->role;
       $bool = isset($this->provider) && isset($this->role);
     } catch (Exception $e) {
-      NuLog::error(["context"=>$e->getMessage(), "user_id"=>(isset($this->current_user)) ? $this->current_user['id'] : -1], __FILE__, __LINE__);
+      NuLog::error(["context"=>$e->getMessage().". Key:".$path_name, "user_id"=>(isset($this->current_user)) ? $this->current_user['id'] : -1], __FILE__, __LINE__);
     }
     return $bool;
   }

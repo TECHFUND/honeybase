@@ -1,25 +1,13 @@
 {
-  "register" : {
-    "/" : { "provider" : ["facebook"], "role" : ["client", "expert"] },
-    "/admin" : { "provider" : ["facebook"], "role" : ["admin"] }
+  "registor" : {
+    "/" : { "providor" : ["facebook"], "role" : ["client", "expert"] },
+    "/admin" : { "providor" : ["facebook"], "role" : ["admin"] }
   },
 
-  "database" : {
+  "databse" : {
     "users" : {
-      "insert" : {
-        "client" : ["title", "body", "category1", "category2", "user_id={current_user}", "created_at", "updated_at"]
-      },
-      "update" : {
-        "client" : ["title", "body", "category1", "category2", "user_id={current_user}", "created_at", "updated_at"],
-        "admin" : ["title", "body", "category1", "category2", "user_id={current_user}", "created_at", "updated_at"]
-      }
-    },
-    "articles" : {
-      "select" : {
-        "all" : ["user_id", "company=null", "position=null", "verify=false", "created_at", "updated_at"]
-      },
-      "delete" : {
-        "all" : ["user_id", "company=null", "position=null", "verify=false", "created_at", "updated_at"]
+      "insart" : {
+        "client" : ["name", "created_at", "updated_at"]
       }
     }
   }

@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="46d6e540-ec47-443d-83f9-1fd7e2004927" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/AccessorParserAbnormalSystemTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/AccessorTest.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/accessor_abnormal.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/accessor_typo.json" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/accessor.json" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/AccessorParserTest.php" afterPath="$PROJECT_DIR$/tests/AccessorParserNormalSystemTest.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/AccessorParserTypoSystemTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/honeybase/core/Middleware/AccessorMiddleware.php" afterPath="$PROJECT_DIR$/lib/honeybase/core/Middleware/AccessorMiddleware.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/honeybase/core/Middleware/AccessorParser.php" afterPath="$PROJECT_DIR$/lib/honeybase/core/Middleware/AccessorParser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/README.md" afterPath="$PROJECT_DIR$/tests/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/accessor.json" afterPath="$PROJECT_DIR$/app/accessor.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/AccessorTest.php" afterPath="$PROJECT_DIR$/tests/AccessorTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/honeybase/spec/integration/README.md" afterPath="$PROJECT_DIR$/lib/honeybase/spec/integration/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/accessor_typo.json" afterPath="$PROJECT_DIR$/tests/accessor_typo.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/honeybase/spec/integration/gulpfile.js" afterPath="$PROJECT_DIR$/lib/honeybase/spec/integration/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/honeybase/spec/integration/lib/honeybase.js" afterPath="$PROJECT_DIR$/lib/honeybase/spec/integration/lib/honeybase.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/lib/honeybase.js" afterPath="$PROJECT_DIR$/public/assets/lib/honeybase.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/storage/logs/lumen.log" afterPath="$PROJECT_DIR$/storage/logs/lumen.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/honeybase/spec/integration/config/origins.json" afterPath="$PROJECT_DIR$/lib/honeybase/spec/integration/config/origins.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/config/origins.json" afterPath="$PROJECT_DIR$/public/config/origins.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="honeybase.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,63 +36,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="AccessorParserNormalSystemTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/AccessorParserNormalSystemTest.php">
+      <file leaf-file-name="AccessorMiddleware.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/honeybase/core/Middleware/AccessorMiddleware.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.125">
-              <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-              <folding>
-                <element signature="e#7#26#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AccessorTest.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/AccessorTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.490196">
-              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state vertical-scroll-proportion="-2.9411764">
+              <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="accessor.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/accessor.json">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/honeybase/spec/integration/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.71753985">
-              <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+            <state vertical-scroll-proportion="0.44930875">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="accessor_abnormal.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/accessor_abnormal.json">
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/honeybase/spec/integration/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.625">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/README.md">
+      <file leaf-file-name="honeybase.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/assets/lib/honeybase.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.111111">
-              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="accessor_typo.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/accessor_typo.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-1.6666666">
+              <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -98,8 +79,8 @@
       <file leaf-file-name="AccessorParser.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/honeybase/core/Middleware/AccessorParser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-35.625">
-              <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+            <state vertical-scroll-proportion="-5.882353">
+              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -113,14 +94,21 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/honeybase/core/Middleware/AccessorParser.php" />
         <option value="$PROJECT_DIR$/tests/AccessorParserTest.php" />
         <option value="$PROJECT_DIR$/tests/AccessorParserNormalSystemTest.php" />
         <option value="$PROJECT_DIR$/tests/accessor_abnormal.json" />
         <option value="$PROJECT_DIR$/tests/README.md" />
         <option value="$PROJECT_DIR$/tests/AccessorParserAbnormalSystemTest.php" />
-        <option value="$PROJECT_DIR$/tests/AccessorTest.php" />
         <option value="$PROJECT_DIR$/app/accessor.json" />
+        <option value="$PROJECT_DIR$/tests/AccessorTest.php" />
+        <option value="$PROJECT_DIR$/tests/accessor_typo.json" />
+        <option value="$PROJECT_DIR$/tests/AccessorParserTypoSystemTest.php" />
+        <option value="$PROJECT_DIR$/lib/honeybase/core/Middleware/AccessorParser.php" />
+        <option value="$PROJECT_DIR$/lib/honeybase/core/Middleware/AccessorMiddleware.php" />
+        <option value="$PROJECT_DIR$/lib/honeybase/spec/integration/gulpfile.js" />
+        <option value="$PROJECT_DIR$/public/assets/lib/honeybase.js" />
+        <option value="$PROJECT_DIR$/public/config/origins.json" />
+        <option value="$PROJECT_DIR$/lib/honeybase/spec/integration/README.md" />
       </list>
     </option>
   </component>
@@ -208,6 +196,164 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="honeybase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="honeybase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="honeybase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="honeybase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="honeybase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="honeybase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="honeybase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="honeybase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="honeybase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="honeybase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="honeybase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="honeybase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="honeybase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="honeybase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="honeybase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="honeybase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="honeybase" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spec" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="integration" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -347,12 +493,12 @@
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27900147" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2819383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2446386" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18427323" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -427,60 +573,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/honeybase/core/Middleware/AccessorParser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-35.625">
-          <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/accessor_typo.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.111111">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/AccessorParserNormalSystemTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.125">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-          <folding>
-            <element signature="e#7#26#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/AccessorParserAbnormalSystemTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76082003">
-          <caret line="71" column="16" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/accessor_abnormal.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.625">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/AccessorTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.490196">
-          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.2184466">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -488,7 +584,121 @@
     <entry file="file://$PROJECT_DIR$/app/accessor.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.71753985">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
+          <caret line="21" column="33" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3038674">
+          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/accessor_abnormal.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24725275">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/AccessorParserAbnormalSystemTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31684983">
+          <caret line="61" column="0" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/AccessorParserNormalSystemTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4945055">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#7#26#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/AccessorParserTypoSystemTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.51487416">
+          <caret line="102" column="31" selection-start-line="102" selection-start-column="31" selection-end-line="102" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/accessor_typo.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17162472">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/honeybase/spec/integration/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/honeybase/core/Middleware/AccessorMiddleware.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.9411764">
+          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/honeybase/spec/integration/config/origins.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.034324944">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/config/origins.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.034324944">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/honeybase/core/Middleware/AccessorParser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.882353">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/assets/lib/honeybase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6666666">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/honeybase/spec/integration/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/honeybase/spec/integration/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44930875">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -1,5 +1,5 @@
 {
-  "development" : "http://localhost:8000",
-  "staging" : "http://staging.com",
-  "production" : "http://production.com"
+  "development" : "localhost",
+  "staging" : "staging.com",
+  "production" : "production.com"
 }

@@ -1,5 +1,6 @@
 (function(global){
-  var url = location.protocol + "//" +location.host;
+  // origins.json should exclude protocol and port
+  var url = location.host.split(":")[0];
   var origin = getConfig("origins.json");
   var env = "development";
 
@@ -7,7 +8,7 @@
     case origin.development:
       env = "development";
       break;
-    case origin.sttaging:
+    case origin.staging:
       env = "staging";
       break;
     case origin.production:

@@ -9,6 +9,11 @@ class AccessorMiddleware {
 
   public function handle($request, Closure $next){
 
+    // setAccessorはobjectを食わせる関数になったので、Middleware上でgetJSONする必要がある
+    // getJSONが相対パスなのかROOTからのパスなのかはコメントかドキュメントで示してやらないと困惑する
+    // requestをコンストラクタで食わせる設計はなくなったのでこのコードはおそらく全面的に描き直される
+    // requestからの抽出物を食わせる形になる
+    // いっぺんintegration testを実行してから、Middlewareを実装しなおして緑にする流れ
     $parser = new AccessorParser($request);
     if( $request->input("isTest") ){
       $type = $request->input("testType");

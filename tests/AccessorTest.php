@@ -6,7 +6,7 @@ use HoneyBase\Core\Middleware\AccessorParser;
 
 class AccessorTest extends TestCase {
 
-  // DI
+  // Test this application's real accessor's structure
   public function testAccessorStructure(){
     // ready
     $accessor = Util::getJSON(__DIR__."/../app/accessor.json");
@@ -33,7 +33,6 @@ class AccessorTest extends TestCase {
       $this->assertTrue( count( (array)$table_value ) > 0 );
 
       foreach( $table_value as $action => $action_value ){
-        var_dump($action);
         $this->assertTrue( in_array($action, ["insert", "update", "select", "delete"]) );
         $this->assertTrue( count( (array)$action_value ) > 0 );
         foreach( $action_value as $role => $params ){
