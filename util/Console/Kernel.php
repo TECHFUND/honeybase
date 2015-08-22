@@ -12,7 +12,8 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        //
+        'Util\Console\Commands\UnitTestCommand',
+        'Util\Console\Commands\IntegrationTestCommand'
     ];
 
     /**

@@ -6089,3 +6089,164 @@ Stack trace:
 [PLACE] - /Users/sgtn/_dev/2015/honeybase/lib/honeybase/Core/Middleware/AccessorParser.php:62
 [VAL] - "{\"context\":\"Trying to get property of non-object. Key:client\",\"user_id\":-1}"
   
+[2015-08-22 09:57:11] lumen.ERROR: exception 'InvalidArgumentException' with message 'There are no commands defined in the "command" namespace.' in /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php:501
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php(535): Symfony\Component\Console\Application->findNamespace('command')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php(192): Symfony\Component\Console\Application->find('command:make')
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php(126): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(75): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /Users/sgtn/_dev/2015/honeybase/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
+[2015-08-22 10:07:38] lumen.ERROR: exception 'InvalidArgumentException' with message 'There are no commands defined in the "test" namespace.' in /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php:501
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php(535): Symfony\Component\Console\Application->findNamespace('test')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php(192): Symfony\Component\Console\Application->find('test:unit')
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php(126): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(75): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /Users/sgtn/_dev/2015/honeybase/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
+[2015-08-22 10:08:26] lumen.ERROR: exception 'InvalidArgumentException' with message 'There are no commands defined in the "test" namespace.' in /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php:501
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php(535): Symfony\Component\Console\Application->findNamespace('test')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php(192): Symfony\Component\Console\Application->find('test:unit')
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php(126): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(75): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /Users/sgtn/_dev/2015/honeybase/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
+[2015-08-22 10:08:46] lumen.ERROR: exception 'InvalidArgumentException' with message 'There are no commands defined in the "test" namespace.' in /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php:501
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php(535): Symfony\Component\Console\Application->findNamespace('test')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php(192): Symfony\Component\Console\Application->find('test:unit')
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php(126): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(75): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 /Users/sgtn/_dev/2015/honeybase/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#5 {main}  
+[2015-08-22 10:09:43] lumen.ERROR: exception 'InvalidArgumentException' with message 'Command "unit" is not defined.' in /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php:549
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php(192): Symfony\Component\Console\Application->find('unit')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php(126): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(75): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /Users/sgtn/_dev/2015/honeybase/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  
+[2015-08-22 10:10:08] lumen.ERROR: exception 'ReflectionException' with message 'Class unit does not exist' in /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php:779
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(779): ReflectionClass->__construct('unit')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(659): Illuminate\Container\Container->build('unit', Array)
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(366): Illuminate\Container\Container->make('unit', Array)
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/console/Application.php(108): Laravel\Lumen\Application->make('unit')
+#4 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/console/Application.php(123): Illuminate\Console\Application->resolve('unit')
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(149): Illuminate\Console\Application->resolveCommands(Array)
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(75): Laravel\Lumen\Console\Kernel->getArtisan()
+#7 /Users/sgtn/_dev/2015/honeybase/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 {main}  
+[2015-08-22 10:10:30] lumen.ERROR: exception 'ReflectionException' with message 'Class unit does not exist' in /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php:779
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(779): ReflectionClass->__construct('unit')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(659): Illuminate\Container\Container->build('unit', Array)
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(366): Illuminate\Container\Container->make('unit', Array)
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/console/Application.php(108): Laravel\Lumen\Application->make('unit')
+#4 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/console/Application.php(123): Illuminate\Console\Application->resolve('unit')
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(149): Illuminate\Console\Application->resolveCommands(Array)
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(75): Laravel\Lumen\Console\Kernel->getArtisan()
+#7 /Users/sgtn/_dev/2015/honeybase/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 {main}  
+[2015-08-22 10:11:11] lumen.ERROR: exception 'ReflectionException' with message 'Class UnitTestCommand does not exist' in /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php:779
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(779): ReflectionClass->__construct('UnitTestCommand')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(659): Illuminate\Container\Container->build('UnitTestCommand', Array)
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(366): Illuminate\Container\Container->make('UnitTestCommand', Array)
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/console/Application.php(108): Laravel\Lumen\Application->make('UnitTestCommand')
+#4 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/console/Application.php(123): Illuminate\Console\Application->resolve('UnitTestCommand')
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(149): Illuminate\Console\Application->resolveCommands(Array)
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(75): Laravel\Lumen\Console\Kernel->getArtisan()
+#7 /Users/sgtn/_dev/2015/honeybase/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 {main}  
+[2015-08-22 10:11:35] lumen.ERROR: exception 'ReflectionException' with message 'Class Laravel\Lumen\Console\Commands\UnitTestCommand does not exist' in /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php:779
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(779): ReflectionClass->__construct('Laravel\\Lumen\\C...')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(659): Illuminate\Container\Container->build('Laravel\\Lumen\\C...', Array)
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(366): Illuminate\Container\Container->make('Laravel\\Lumen\\C...', Array)
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/console/Application.php(108): Laravel\Lumen\Application->make('Laravel\\Lumen\\C...')
+#4 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/console/Application.php(123): Illuminate\Console\Application->resolve('Laravel\\Lumen\\C...')
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(149): Illuminate\Console\Application->resolveCommands(Array)
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(75): Laravel\Lumen\Console\Kernel->getArtisan()
+#7 /Users/sgtn/_dev/2015/honeybase/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 {main}  
+[2015-08-22 10:12:11] lumen.ERROR: exception 'ReflectionException' with message 'Class Laravel\Lumen\Console\Commands\UnitTestCommand does not exist' in /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php:779
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(779): ReflectionClass->__construct('Laravel\\Lumen\\C...')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(659): Illuminate\Container\Container->build('Laravel\\Lumen\\C...', Array)
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(366): Illuminate\Container\Container->make('Laravel\\Lumen\\C...', Array)
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/console/Application.php(108): Laravel\Lumen\Application->make('Laravel\\Lumen\\C...')
+#4 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/console/Application.php(123): Illuminate\Console\Application->resolve('Laravel\\Lumen\\C...')
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(149): Illuminate\Console\Application->resolveCommands(Array)
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(75): Laravel\Lumen\Console\Kernel->getArtisan()
+#7 /Users/sgtn/_dev/2015/honeybase/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 {main}  
+[2015-08-22 10:13:04] lumen.ERROR: exception 'ErrorException' with message 'Use of undefined constant UnitTestCommand - assumed 'UnitTestCommand'' in /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php:820
+Stack trace:
+#0 [internal function]: Laravel\Lumen\Application->Laravel\Lumen\{closure}(8, 'Use of undefine...', '/Users/sgtn/_de...', 820, Array)
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(820): ReflectionClass->newInstanceArgs(Array)
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(659): Illuminate\Container\Container->build('Util\\Console\\Ke...', Array)
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(366): Illuminate\Container\Container->make('Util\\Console\\Ke...', Array)
+#4 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(229): Laravel\Lumen\Application->make('Util\\Console\\Ke...', Array)
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(776): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Laravel\Lumen\Application), Array)
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(659): Illuminate\Container\Container->build(Object(Closure), Array)
+#7 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(366): Illuminate\Container\Container->make('Illuminate\\Cont...', Array)
+#8 /Users/sgtn/_dev/2015/honeybase/artisan(33): Laravel\Lumen\Application->make('Illuminate\\Cont...')
+#9 {main}  
+[2015-08-22 10:13:27] lumen.ERROR: exception 'ReflectionException' with message 'Class UnitTestCommand does not exist' in /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php:779
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(779): ReflectionClass->__construct('UnitTestCommand')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(659): Illuminate\Container\Container->build('UnitTestCommand', Array)
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(366): Illuminate\Container\Container->make('UnitTestCommand', Array)
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/console/Application.php(108): Laravel\Lumen\Application->make('UnitTestCommand')
+#4 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/console/Application.php(123): Illuminate\Console\Application->resolve('UnitTestCommand')
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(149): Illuminate\Console\Application->resolveCommands(Array)
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(75): Laravel\Lumen\Console\Kernel->getArtisan()
+#7 /Users/sgtn/_dev/2015/honeybase/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 {main}  
+[2015-08-22 10:13:41] lumen.ERROR: exception 'ReflectionException' with message 'Class UnitTestCommand does not exist' in /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php:779
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(779): ReflectionClass->__construct('UnitTestCommand')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(659): Illuminate\Container\Container->build('UnitTestCommand', Array)
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(366): Illuminate\Container\Container->make('UnitTestCommand', Array)
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/console/Application.php(108): Laravel\Lumen\Application->make('UnitTestCommand')
+#4 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/console/Application.php(123): Illuminate\Console\Application->resolve('UnitTestCommand')
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(149): Illuminate\Console\Application->resolveCommands(Array)
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(75): Laravel\Lumen\Console\Kernel->getArtisan()
+#7 /Users/sgtn/_dev/2015/honeybase/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 {main}  
+[2015-08-22 10:22:35] lumen.ERROR: exception 'ReflectionException' with message 'Class UnitTestCommand does not exist' in /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php:779
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(779): ReflectionClass->__construct('UnitTestCommand')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(659): Illuminate\Container\Container->build('UnitTestCommand', Array)
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(366): Illuminate\Container\Container->make('UnitTestCommand', Array)
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/console/Application.php(108): Laravel\Lumen\Application->make('UnitTestCommand')
+#4 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/console/Application.php(123): Illuminate\Console\Application->resolve('UnitTestCommand')
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(149): Illuminate\Console\Application->resolveCommands(Array)
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(75): Laravel\Lumen\Console\Kernel->getArtisan()
+#7 /Users/sgtn/_dev/2015/honeybase/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 {main}  
+[2015-08-22 10:24:10] lumen.ERROR: exception 'ReflectionException' with message 'Class Laravel\Lumen\Console\Commands\UnitTestCommand does not exist' in /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php:779
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(779): ReflectionClass->__construct('Laravel\\Lumen\\C...')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(659): Illuminate\Container\Container->build('Laravel\\Lumen\\C...', Array)
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(366): Illuminate\Container\Container->make('Laravel\\Lumen\\C...', Array)
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/console/Application.php(108): Laravel\Lumen\Application->make('Laravel\\Lumen\\C...')
+#4 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/console/Application.php(123): Illuminate\Console\Application->resolve('Laravel\\Lumen\\C...')
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(149): Illuminate\Console\Application->resolveCommands(Array)
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(75): Laravel\Lumen\Console\Kernel->getArtisan()
+#7 /Users/sgtn/_dev/2015/honeybase/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 {main}  
+[2015-08-22 10:25:57] lumen.ERROR: exception 'ReflectionException' with message 'Class integration does not exist' in /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php:779
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(779): ReflectionClass->__construct('integration')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(659): Illuminate\Container\Container->build('integration', Array)
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(366): Illuminate\Container\Container->make('integration', Array)
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/console/Application.php(108): Laravel\Lumen\Application->make('integration')
+#4 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/console/Application.php(123): Illuminate\Console\Application->resolve('integration')
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(149): Illuminate\Console\Application->resolveCommands(Array)
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(75): Laravel\Lumen\Console\Kernel->getArtisan()
+#7 /Users/sgtn/_dev/2015/honeybase/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 {main}  
