@@ -1,11 +1,11 @@
-<?php namespace Util\Console\Commands;
+<?php namespace Util\Console\Commands\Test;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 
 class UnitTestCommand extends Command {
 
-    protected $name = 'unit';
+    protected $name = 'test:unit';
     protected $description = "Run unit test in /tests";
 
     /**

@@ -1,11 +1,11 @@
-<?php namespace Util\Console\Commands;
+<?php namespace Util\Console\Commands\Test;
 
 use Illuminate\Console\Command;
 use Symfony\Component\Console\Input\InputOption;
 
 class IntegrationTestCommand extends Command {
 
-    protected $name = 'integration';
+    protected $name = 'test:integration';
     protected $description = "Run integration test in /lib/honeybase/spec";
 
     /**

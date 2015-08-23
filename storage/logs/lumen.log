@@ -6250,3 +6250,35 @@ Stack trace:
 #6 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(75): Laravel\Lumen\Console\Kernel->getArtisan()
 #7 /Users/sgtn/_dev/2015/honeybase/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
 #8 {main}  
+[2015-08-23 00:17:37] lumen.ERROR: exception 'ReflectionException' with message 'Class Util\Console\Commands\Test\nitTestCommand does not exist' in /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php:779
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(779): ReflectionClass->__construct('Util\\Console\\Co...')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/container/Container.php(659): Illuminate\Container\Container->build('Util\\Console\\Co...', Array)
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Application.php(366): Illuminate\Container\Container->make('Util\\Console\\Co...', Array)
+#3 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/console/Application.php(108): Laravel\Lumen\Application->make('Util\\Console\\Co...')
+#4 /Users/sgtn/_dev/2015/honeybase/vendor/illuminate/console/Application.php(123): Illuminate\Console\Application->resolve('Util\\Console\\Co...')
+#5 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(149): Illuminate\Console\Application->resolveCommands(Array)
+#6 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(75): Laravel\Lumen\Console\Kernel->getArtisan()
+#7 /Users/sgtn/_dev/2015/honeybase/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#8 {main}  
+[2015-08-23 00:18:18] lumen.ERROR: exception 'InvalidArgumentException' with message 'Command "integration" is not defined.
+
+Did you mean this?
+    test:integration' in /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php:549
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php(192): Symfony\Component\Console\Application->find('integration')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php(126): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(75): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /Users/sgtn/_dev/2015/honeybase/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  
+[2015-08-23 00:18:39] lumen.ERROR: exception 'InvalidArgumentException' with message 'Command "test" is not defined.
+
+Did you mean one of these?
+    test:integration
+    test:unit' in /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php:549
+Stack trace:
+#0 /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php(192): Symfony\Component\Console\Application->find('test')
+#1 /Users/sgtn/_dev/2015/honeybase/vendor/symfony/console/Symfony/Component/Console/Application.php(126): Symfony\Component\Console\Application->doRun(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#2 /Users/sgtn/_dev/2015/honeybase/vendor/laravel/lumen-framework/src/Console/Kernel.php(75): Symfony\Component\Console\Application->run(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#3 /Users/sgtn/_dev/2015/honeybase/artisan(35): Laravel\Lumen\Console\Kernel->handle(Object(Symfony\Component\Console\Input\ArgvInput), Object(Symfony\Component\Console\Output\ConsoleOutput))
+#4 {main}  
