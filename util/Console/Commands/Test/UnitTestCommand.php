@@ -15,26 +15,9 @@ class UnitTestCommand extends Command {
      */
     public function fire()
     {
-        chdir(base_path('public'));
-        $host = $this->input->getOption('host');
-        $port = $this->input->getOption('port');
-        $base = $this->laravel->basePath();
-        $this->info("Lumen development server started on http://{$host}:{$port}/");
-        passthru('"'.PHP_BINARY.'"'." -S {$host}:{$port} \"{$base}\"/server.php"); //このファイルがindex.phpおよびapp.phpを読んでいる
-    }
-
-    /**
-     * Get the console command options.
-     *
-     * @return array
-     */
-    protected function getOptions()
-    {
-        return array(
-            array('host', null, InputOption::VALUE_OPTIONAL, 'The host address to serve the application on.', 'localhost'),
-
-            array('port', null, InputOption::VALUE_OPTIONAL, 'The port to serve the application on.', 8000),
-        );
+        $this->info("Unit test executing in /tests by vendor/bin/phpunit command");
+        chdir(base_path());
+        passthru("vendor/bin/phpunit");
     }
 
 }
