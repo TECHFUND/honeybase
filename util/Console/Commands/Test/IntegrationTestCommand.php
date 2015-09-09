@@ -21,6 +21,9 @@ class IntegrationTestCommand extends Command {
         $base = $this->laravel->basePath();
         $this->info("Lumen development server started on http://{$host}:{$port}/");
         passthru('"'.PHP_BINARY.'"'." -S {$host}:{$port} \"{$base}\"/server.php"); //このファイルがindex.phpおよびapp.phpを読んでいる
+        // lib/honeybas/spec/server.php にこの関数からアクセスしserve,
+        // lib/honeybas/spec/app.php を実行する
+        // lib/honeybas/spec/routes.php の /integration を開く
     }
 
     /**

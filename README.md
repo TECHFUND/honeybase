@@ -1,22 +1,44 @@
 # HoneyBase
 
-HoneyBase is prototyping-oriented framework.
+---
 
-It allows you 'no backend like' development.
+# What's this?
+HoneyBase is made for rapid prototyping. Thus, it is realy focusing on frontend development. Its backend is already implemented, and developer mainly use JavaScriptSDK (hoenybase.js). It allows you UI-first development.
 
-Actually, there's lumen-based backend, but you don't need to touch it, and also you can touch it for
-further development.
+At the same time, HoneyBase is a [laravel/lumen](http://lumen.laravel.com/) extended PHP framework. So, you can customize its pre-implemented backend by adding new API to its router. And if you want, you can use MVC framework functions such as ORM, Controller, Middleware, template engine, test framework and so on!
 
-It all your right to keep maintanable or code like cowboy. You just focus on what you want, what people want.
+# When is it usuful?
+- When you want to evaluate your business hypothesis as soon as possible.
+- But when you feel the BaaS(Backend as a Service) like [parse.com](parse.com) seems little untrustable.
+- Product requirements haven't decided yet and it likely to change easily.
+- Product life time more than 1 month but less than 1 year. ("To develop it sloppily is scary but to develop it precisely is also scary." situation.)
+
+# Why Lumen?
+- Both `ruby` and `php` developer are able to understand that codebase. (Rails flavored architecture written in PHP)
+- Not so much "Convention", easy to learn, easy to configure.
+- If your project getting bigger, ride the larabel-way and write maintainable code.
+
+# How can I use?
+- Install Lumen, Composer and MySQL
+- Honeybase CLI API
+- Honeybase Accessor(Validator)
+- Custom API implementation
+
+# TODO
+- More test coverage
+- More prepared function (SSL, Payment)
+- Frontend ORMapper/QueryBuilder (Better performance needed if you beyond prototyping)
 
 ---
 
-# Class Map
+# Architecture
+
+Based on MVC architecture derived from laravel/lumen.
 
 ## Definition of All
 - `/app/routes.php`, `app/accessor.json`, `database/migrations/`
 
-## Backend Model and Controller
+## Custom Model and Controller
 - `/app/Controller`, `/app/Model`, `/app/Middleware`
 
 ## Frontend
@@ -58,8 +80,7 @@ ref `/public/index.php` by httpd
 - `tail -f storage/logs/lumen.log`
 
 ### Next features
-- Thiking about the suitable dir of js files
+- Conbination feature with FrontendMVW
 - SSL (use tinycert)
 - Payment(Strip/Webpay)
-- Node SDK
 - iOS/Android SDK
